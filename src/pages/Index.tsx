@@ -45,72 +45,93 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="bg-primary text-primary-foreground py-20">
-        <div className="container mx-auto px-4 text-center">
-          <div className="flex items-center justify-center mb-6">
-            <Star className="h-12 w-12 mr-3" />
-            <h1 className="text-5xl font-bold">STAR CONSTRUCTION LLC</h1>
+      <section className="bg-gradient-hero text-primary-foreground py-24 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-20">
+          <div className="w-full h-full bg-gradient-to-br from-white/5 to-transparent"></div>
+        </div>
+        <div className="container mx-auto px-4 text-center relative z-10">
+          <div className="flex items-center justify-center mb-8 animate-fade-in">
+            <Star className="h-16 w-16 mr-4 animate-glow" />
+            <h1 className="text-6xl font-bold bg-gradient-to-r from-white to-gray-200 bg-clip-text text-transparent">
+              STAR CONSTRUCTION LLC
+            </h1>
           </div>
-          <p className="text-xl mb-8 max-w-3xl mx-auto">
-            Specializing in EIFS, Stone, Insulcrete, Caulking, and Construction Cleaning services 
-            throughout Dane County, Wisconsin
+          <p className="text-xl mb-8 max-w-3xl mx-auto opacity-90 animate-slide-up">
+            🌲 Specializing in EIFS, Stone, Insulcrete, Caulking, and Construction Cleaning services 
+            throughout beautiful Dane County, Wisconsin 🏔️
           </p>
-          <div className="flex flex-wrap justify-center gap-4 mb-8">
-            {services.map((service) => (
-              <Badge key={service.name} variant="secondary" className="text-lg py-2 px-4">
+          <div className="flex flex-wrap justify-center gap-4 mb-10 animate-fade-in" style={{animationDelay: '0.3s'}}>
+            {services.map((service, index) => (
+              <Badge 
+                key={service.name} 
+                variant="secondary" 
+                className="text-lg py-3 px-6 bg-white/20 text-white border-white/30 hover:bg-white/30 transition-all duration-300 hover:scale-105"
+                style={{animationDelay: `${0.1 * index}s`}}
+              >
                 {service.name}
               </Badge>
             ))}
           </div>
-          <Button size="lg" variant="secondary" className="text-lg px-8 py-3">
-            Get Free Quote
-          </Button>
+          <div className="animate-slide-up" style={{animationDelay: '0.6s'}}>
+            <Button size="lg" className="text-lg px-10 py-4 bg-accent text-accent-foreground hover:bg-accent/90 shadow-glow hover:shadow-xl transition-all duration-300 hover:scale-105">
+              🎯 Get Free Quote Today
+            </Button>
+          </div>
         </div>
       </section>
 
       {/* About Section */}
-      <section className="py-16 bg-muted/30">
+      <section className="py-20 bg-gradient-to-br from-muted/40 to-accent/5">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="flex items-center justify-center mb-8">
-              <Users className="h-8 w-8 mr-3 text-primary" />
-              <h2 className="text-3xl font-bold">About Us</h2>
+          <div className="max-w-5xl mx-auto">
+            <div className="flex items-center justify-center mb-12 animate-fade-in">
+              <Users className="h-10 w-10 mr-4 text-primary animate-float" />
+              <h2 className="text-4xl font-bold text-center bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                About Our Wisconsin Family Business
+              </h2>
             </div>
-            <Card>
-              <CardContent className="p-8">
-                <div className="grid md:grid-cols-2 gap-8 items-center">
-                  <div>
-                    <h3 className="text-2xl font-semibold mb-4">Our Story</h3>
-                    <p className="text-muted-foreground mb-4">
+            <Card className="bg-gradient-card shadow-soft hover:shadow-glow transition-all duration-500 border-0">
+              <CardContent className="p-10">
+                <div className="grid md:grid-cols-2 gap-10 items-center">
+                  <div className="space-y-6">
+                    <h3 className="text-3xl font-semibold text-primary mb-6">🌟 Our Journey to Wisconsin</h3>
+                    <p className="text-muted-foreground text-lg leading-relaxed">
                       Our family came from Ecuador to Wisconsin for a better life during the 2000s. 
                       We worked in construction back in Ecuador, so we continued in the same footsteps.
                     </p>
-                    <p className="text-muted-foreground mb-4">
+                    <p className="text-muted-foreground text-lg leading-relaxed">
                       We slowly gained experience and knowledge working for other construction companies 
                       for over two decades. Our construction knowledge from Ecuador and two decades of 
                       working in the States gives us an edge over other companies.
                     </p>
-                    <p className="text-muted-foreground">
+                    <p className="text-muted-foreground text-lg leading-relaxed">
                       We also offer Spanish/English translation services. To be blunt, we are extremely 
                       hard workers and there is no job we won't take a crack at.
                     </p>
                   </div>
-                  <div className="space-y-4">
-                    <div className="flex items-center">
-                      <CheckCircle className="h-5 w-5 text-primary mr-3" />
-                      <span>20+ Years Combined Experience</span>
-                    </div>
-                    <div className="flex items-center">
-                      <CheckCircle className="h-5 w-5 text-primary mr-3" />
-                      <span>Family-Owned & Operated</span>
-                    </div>
-                    <div className="flex items-center">
-                      <CheckCircle className="h-5 w-5 text-primary mr-3" />
-                      <span>Bilingual Services (Spanish/English)</span>
-                    </div>
-                    <div className="flex items-center">
-                      <CheckCircle className="h-5 w-5 text-primary mr-3" />
-                      <span>Serving Dane County</span>
+                  <div className="space-y-6 bg-gradient-to-br from-primary/5 to-secondary/5 p-8 rounded-xl">
+                    <h4 className="text-xl font-semibold text-primary mb-4">🏡 Why Choose Our Wisconsin Team?</h4>
+                    <div className="space-y-4">
+                      <div className="flex items-center group hover:translate-x-2 transition-transform duration-300">
+                        <CheckCircle className="h-6 w-6 text-accent mr-4 group-hover:text-primary transition-colors" />
+                        <span className="text-lg">🕐 20+ Years Combined Experience</span>
+                      </div>
+                      <div className="flex items-center group hover:translate-x-2 transition-transform duration-300">
+                        <CheckCircle className="h-6 w-6 text-accent mr-4 group-hover:text-primary transition-colors" />
+                        <span className="text-lg">👨‍👩‍👧‍👦 Family-Owned & Operated</span>
+                      </div>
+                      <div className="flex items-center group hover:translate-x-2 transition-transform duration-300">
+                        <CheckCircle className="h-6 w-6 text-accent mr-4 group-hover:text-primary transition-colors" />
+                        <span className="text-lg">🗣️ Bilingual Services (Spanish/English)</span>
+                      </div>
+                      <div className="flex items-center group hover:translate-x-2 transition-transform duration-300">
+                        <CheckCircle className="h-6 w-6 text-accent mr-4 group-hover:text-primary transition-colors" />
+                        <span className="text-lg">📍 Proudly Serving Dane County</span>
+                      </div>
+                      <div className="flex items-center group hover:translate-x-2 transition-transform duration-300">
+                        <CheckCircle className="h-6 w-6 text-accent mr-4 group-hover:text-primary transition-colors" />
+                        <span className="text-lg">💪 No Job Too Big or Small</span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -121,26 +142,32 @@ const Index = () => {
       </section>
 
       {/* Services Section */}
-      <section className="py-16">
+      <section className="py-20 bg-gradient-to-b from-background to-muted/20">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Our Services</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+              🔨 Our Expert Services
+            </h2>
+            <p className="text-muted-foreground max-w-3xl mx-auto text-lg leading-relaxed">
               Star Construction is a small family company serving Dane County. We specialize in applying 
-              EIFS, caulking, insulcrete, and stone to residential and commercial buildings.
+              EIFS, caulking, insulcrete, and stone to residential and commercial buildings with Wisconsin craftsmanship.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {services.map((service) => (
-              <Card key={service.name} className="hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <CardTitle className="flex items-center">
-                    <Shield className="h-5 w-5 mr-2 text-primary" />
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {services.map((service, index) => (
+              <Card 
+                key={service.name} 
+                className="bg-gradient-card hover:shadow-glow transition-all duration-500 hover:scale-105 group border-0 animate-slide-up"
+                style={{animationDelay: `${0.1 * index}s`}}
+              >
+                <CardHeader className="text-center pb-4">
+                  <CardTitle className="flex items-center justify-center text-xl group-hover:text-primary transition-colors">
+                    <Shield className="h-7 w-7 mr-3 text-accent group-hover:text-primary transition-colors animate-float" />
                     {service.name}
                   </CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">{service.description}</p>
+                <CardContent className="text-center">
+                  <p className="text-muted-foreground group-hover:text-foreground transition-colors text-lg">{service.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -149,61 +176,64 @@ const Index = () => {
       </section>
 
       {/* EIFS vs Stucco Comparison */}
-      <section className="py-16 bg-muted/30">
+      <section className="py-20 bg-gradient-to-br from-accent/5 to-primary/5">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">EIFS vs Stucco</h2>
-            <p className="text-muted-foreground">
-              EIFS (Synthetic stucco) is an exterior insulation and finishing system
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+              🏗️ EIFS vs Traditional Stucco
+            </h2>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+              EIFS (Synthetic stucco) is an exterior insulation and finishing system. 
+              Let us help you choose the right solution for your Wisconsin home or business.
             </p>
           </div>
           <div className="max-w-6xl mx-auto">
-            <Card>
+            <Card className="bg-gradient-card shadow-soft border-0 animate-slide-up">
               <CardContent className="p-0">
                 <div className="overflow-x-auto">
                   <table className="w-full">
                     <thead>
-                      <tr className="border-b bg-muted">
-                        <th className="text-left p-4 font-semibold">Factor</th>
-                        <th className="text-left p-4 font-semibold">EIFS</th>
-                        <th className="text-left p-4 font-semibold">Traditional Stucco</th>
+                      <tr className="border-b bg-gradient-to-r from-primary/10 to-accent/10">
+                        <th className="text-left p-6 font-bold text-lg text-primary">Factor</th>
+                        <th className="text-left p-6 font-bold text-lg text-primary">EIFS ⭐</th>
+                        <th className="text-left p-6 font-bold text-lg text-primary">Traditional Stucco</th>
                       </tr>
                     </thead>
-                    <tbody className="text-sm">
-                      <tr className="border-b">
-                        <td className="p-4 font-medium">Appearance</td>
-                        <td className="p-4">More color options and smoother texture</td>
-                        <td className="p-4">Fewer color options and rougher texture</td>
+                    <tbody className="text-base">
+                      <tr className="border-b hover:bg-accent/5 transition-colors">
+                        <td className="p-6 font-semibold text-accent">🎨 Appearance</td>
+                        <td className="p-6">More color options and smoother texture</td>
+                        <td className="p-6">Fewer color options and rougher texture</td>
                       </tr>
-                      <tr className="border-b">
-                        <td className="p-4 font-medium">Cost</td>
-                        <td className="p-4">$8 – $14 per sq. ft., fully installed</td>
-                        <td className="p-4">$7 – $9 per sq. ft., fully installed</td>
+                      <tr className="border-b hover:bg-accent/5 transition-colors">
+                        <td className="p-6 font-semibold text-accent">💰 Cost</td>
+                        <td className="p-6">$8 – $14 per sq. ft., fully installed</td>
+                        <td className="p-6">$7 – $9 per sq. ft., fully installed</td>
                       </tr>
-                      <tr className="border-b">
-                        <td className="p-4 font-medium">Upkeep</td>
-                        <td className="p-4">No major maintenance requirements other than regular cleaning</td>
-                        <td className="p-4">More maintenance requirements including patching, caulking, and repainting</td>
+                      <tr className="border-b hover:bg-accent/5 transition-colors">
+                        <td className="p-6 font-semibold text-accent">🔧 Upkeep</td>
+                        <td className="p-6">No major maintenance requirements other than regular cleaning</td>
+                        <td className="p-6">More maintenance requirements including patching, caulking, and repainting</td>
                       </tr>
-                      <tr className="border-b">
-                        <td className="p-4 font-medium">Durability</td>
-                        <td className="p-4">Resistant to cracking, but can trap moisture behind the finish</td>
-                        <td className="p-4">Prone to cracking but more "breathable" (allows in and out movement of moisture)</td>
+                      <tr className="border-b hover:bg-accent/5 transition-colors">
+                        <td className="p-6 font-semibold text-accent">🛡️ Durability</td>
+                        <td className="p-6">Resistant to cracking, but can trap moisture behind the finish</td>
+                        <td className="p-6">Prone to cracking but more "breathable" (allows in and out movement of moisture)</td>
                       </tr>
-                      <tr className="border-b">
-                        <td className="p-4 font-medium">Installation</td>
-                        <td className="p-4">Needs installation by a professional</td>
-                        <td className="p-4">Possible to install DIY</td>
+                      <tr className="border-b hover:bg-accent/5 transition-colors">
+                        <td className="p-6 font-semibold text-accent">🏗️ Installation</td>
+                        <td className="p-6">Needs installation by a professional</td>
+                        <td className="p-6">Possible to install DIY</td>
                       </tr>
-                      <tr className="border-b">
-                        <td className="p-4 font-medium">Environmental Impact</td>
-                        <td className="p-4">Petroleum-based and therefore not renewable</td>
-                        <td className="p-4">Manufacture of Portland cement is energy intensive and releases high amounts of CO2</td>
+                      <tr className="border-b hover:bg-accent/5 transition-colors">
+                        <td className="p-6 font-semibold text-accent">🌱 Environmental Impact</td>
+                        <td className="p-6">Petroleum-based and therefore not renewable</td>
+                        <td className="p-6">Manufacture of Portland cement is energy intensive and releases high amounts of CO2</td>
                       </tr>
-                      <tr>
-                        <td className="p-4 font-medium">Resale Value</td>
-                        <td className="p-4">About 70% return on investment (ROI)</td>
-                        <td className="p-4">About 70% ROI (same as EIFS)</td>
+                      <tr className="hover:bg-accent/5 transition-colors">
+                        <td className="p-6 font-semibold text-accent">📈 Resale Value</td>
+                        <td className="p-6">About 70% return on investment (ROI)</td>
+                        <td className="p-6">About 70% ROI (same as EIFS)</td>
                       </tr>
                     </tbody>
                   </table>
@@ -215,33 +245,42 @@ const Index = () => {
       </section>
 
       {/* References Section */}
-      <section className="py-16">
+      <section className="py-20 bg-gradient-to-b from-background to-secondary/5">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Our References</h2>
-            <p className="text-muted-foreground max-w-3xl mx-auto">
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+              🏆 Our Proud Wisconsin Projects
+            </h2>
+            <p className="text-muted-foreground max-w-4xl mx-auto text-lg leading-relaxed">
               Here are companies we have worked with and a brief description of the work done. 
-              These are just some projects - we have done a lot more, so feel free to reach out 
-              to them and ask about their experience with us!
+              These are just some projects - we have done a lot more throughout Dane County, so feel free to reach out 
+              to them and ask about their experience with our Wisconsin craftsmanship!
             </p>
           </div>
-          <div className="grid md:grid-cols-2 gap-6">
-            {references.map((ref) => (
-              <Card key={ref.company} className="hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <CardTitle className="text-primary">{ref.company}</CardTitle>
-                  <CardDescription className="flex items-start">
-                    <MapPin className="h-4 w-4 mr-2 mt-0.5 flex-shrink-0" />
+          <div className="grid md:grid-cols-2 gap-8">
+            {references.map((ref, index) => (
+              <Card 
+                key={ref.company} 
+                className="bg-gradient-card hover:shadow-glow transition-all duration-500 hover:scale-105 group border-0 animate-slide-up"
+                style={{animationDelay: `${0.1 * index}s`}}
+              >
+                <CardHeader className="pb-6">
+                  <CardTitle className="text-primary text-xl group-hover:text-accent transition-colors flex items-center">
+                    <Star className="h-5 w-5 mr-2 animate-float" />
+                    {ref.company}
+                  </CardTitle>
+                  <CardDescription className="flex items-start text-base">
+                    <MapPin className="h-5 w-5 mr-3 mt-0.5 flex-shrink-0 text-accent" />
                     {ref.address}
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <h4 className="font-semibold mb-2">Work Completed:</h4>
-                  <ul className="space-y-1">
-                    {ref.work.map((item, index) => (
-                      <li key={index} className="text-sm text-muted-foreground flex items-start">
-                        <CheckCircle className="h-3 w-3 mr-2 mt-1 text-primary flex-shrink-0" />
-                        {item}
+                  <h4 className="font-semibold mb-4 text-lg text-primary">✅ Work Completed:</h4>
+                  <ul className="space-y-3">
+                    {ref.work.map((item, itemIndex) => (
+                      <li key={itemIndex} className="text-muted-foreground flex items-start group-hover:text-foreground transition-colors">
+                        <CheckCircle className="h-4 w-4 mr-3 mt-1 text-accent flex-shrink-0" />
+                        <span className="text-base">{item}</span>
                       </li>
                     ))}
                   </ul>
@@ -253,35 +292,42 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="py-16 bg-primary text-primary-foreground">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Contact Us</h2>
-            <p className="text-xl opacity-90">
-              Ready to start your project? Contact us for any job opportunities and 
-              to receive free quotes on your next project!
+      <section className="py-24 bg-gradient-hero text-primary-foreground relative overflow-hidden">
+        <div className="absolute inset-0 opacity-20">
+          <div className="w-full h-full bg-gradient-to-br from-white/5 to-transparent"></div>
+        </div>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-4xl font-bold mb-6">📞 Let's Build Something Beautiful Together</h2>
+            <p className="text-xl opacity-90 max-w-3xl mx-auto">
+              Ready to start your project? Contact our Wisconsin team for any job opportunities and 
+              to receive FREE quotes on your next construction project! 🏗️
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {contacts.map((contact) => (
-              <Card key={contact.name} className="bg-white text-foreground">
-                <CardHeader className="text-center">
-                  <CardTitle className="text-lg">{contact.name}</CardTitle>
-                  <CardDescription className="text-primary font-semibold">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {contacts.map((contact, index) => (
+              <Card 
+                key={contact.name} 
+                className="bg-white text-foreground hover:shadow-glow transition-all duration-500 hover:scale-105 group animate-slide-up"
+                style={{animationDelay: `${0.1 * index}s`}}
+              >
+                <CardHeader className="text-center pb-6">
+                  <CardTitle className="text-xl group-hover:text-primary transition-colors">{contact.name}</CardTitle>
+                  <CardDescription className="text-primary font-bold text-base">
                     {contact.role}
                   </CardDescription>
                 </CardHeader>
-                <CardContent className="space-y-3">
-                  <div className="flex items-center">
-                    <Phone className="h-4 w-4 mr-2 text-primary" />
-                    <a href={`tel:${contact.phone}`} className="text-sm hover:underline">
+                <CardContent className="space-y-4">
+                  <div className="flex items-center group-hover:text-primary transition-colors">
+                    <Phone className="h-5 w-5 mr-3 text-accent group-hover:text-primary transition-colors" />
+                    <a href={`tel:${contact.phone}`} className="text-base hover:underline font-medium">
                       {contact.phone}
                     </a>
                   </div>
                   {contact.email && (
-                    <div className="flex items-start">
-                      <Mail className="h-4 w-4 mr-2 mt-0.5 text-primary flex-shrink-0" />
-                      <a href={`mailto:${contact.email}`} className="text-sm hover:underline break-all">
+                    <div className="flex items-start group-hover:text-primary transition-colors">
+                      <Mail className="h-5 w-5 mr-3 mt-0.5 text-accent group-hover:text-primary transition-colors flex-shrink-0" />
+                      <a href={`mailto:${contact.email}`} className="text-base hover:underline break-all">
                         {contact.email}
                       </a>
                     </div>
@@ -294,14 +340,16 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-muted py-8">
+      <footer className="bg-gradient-to-r from-muted to-accent/10 py-12">
         <div className="container mx-auto px-4 text-center">
-          <div className="flex items-center justify-center mb-4">
-            <Star className="h-6 w-6 mr-2 text-primary" />
-            <span className="font-semibold">Star Construction LLC</span>
+          <div className="flex items-center justify-center mb-6 animate-fade-in">
+            <Star className="h-8 w-8 mr-3 text-primary animate-glow" />
+            <span className="font-bold text-2xl bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+              Star Construction LLC
+            </span>
           </div>
-          <p className="text-muted-foreground">Serving Dane County, Wisconsin</p>
-          <p className="text-sm text-muted-foreground mt-2">Website coming soon!</p>
+          <p className="text-muted-foreground text-lg mb-2">🏔️ Proudly Serving Beautiful Dane County, Wisconsin 🌲</p>
+          <p className="text-sm text-muted-foreground">Professional Construction Services Since 2000s</p>
         </div>
       </footer>
     </div>
