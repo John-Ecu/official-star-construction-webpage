@@ -96,17 +96,19 @@ const Index = () => {
                   <div className="space-y-6">
                     <h3 className="text-3xl font-semibold text-primary mb-6">🌟 Our Journey to Wisconsin</h3>
                     <p className="text-muted-foreground text-lg leading-relaxed">
-                      Our family came from Ecuador to Wisconsin for a better life during the 2000s. 
-                      We worked in construction back in Ecuador, so we continued in the same footsteps.
+                      In the early 2000s, our family made the brave decision to leave everything behind in Ecuador 
+                      and journey to Wisconsin in search of the American Dream. We brought with us years of 
+                      construction experience from our homeland and an unwavering determination to build something special.
                     </p>
                     <p className="text-muted-foreground text-lg leading-relaxed">
-                      We slowly gained experience and knowledge working for other construction companies 
-                      for over two decades. Our construction knowledge from Ecuador and two decades of 
-                      working in the States gives us an edge over other companies.
+                      Over the past two decades, we've worked alongside some of Wisconsin's finest construction companies, 
+                      learning, growing, and perfecting our craft. This unique combination of Ecuadorian craftsmanship 
+                      and American construction standards has shaped us into the skilled professionals we are today.
                     </p>
                     <p className="text-muted-foreground text-lg leading-relaxed">
-                      We also offer Spanish/English translation services. To be blunt, we are extremely 
-                      hard workers and there is no job we won't take a crack at.
+                      As a bilingual team, we bridge language barriers and serve both English and Spanish-speaking 
+                      communities with equal dedication. Our work ethic is simple: no project is too challenging, 
+                      and no detail is too small. We treat every job as if we're building for our own family.
                     </p>
                   </div>
                   <div className="space-y-6 bg-gradient-to-br from-primary/5 to-secondary/5 p-8 rounded-xl">
