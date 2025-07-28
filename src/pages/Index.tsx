@@ -38,8 +38,8 @@ const Index = () => {
   const contacts = [
     { name: "John Castro", role: "Account Executive", phone: "608-358-3706", email: "john.castroflores2000@gmail.com", photo: "/lovable-uploads/f2647afe-985c-4486-8b27-8c6dd9a58cbe.png" },
     { name: "Mili Castro", role: "Accountant & Manager", phone: "608-698-7669", email: "castromary1220@yahoo.com", photo: "/lovable-uploads/0434e918-a574-4f1c-bfe1-25221834808c.png" },
-    { name: "Thomas Villacres", role: "Supervisor", phone: "608-333-8120", email: "", photo: "/lovable-uploads/fd1bdbd5-481a-4c8d-8344-c9650c6f34b6.png" },
-    { name: "Cristian Castro", role: "Company Owner", phone: "608-635-6033", email: "bluestarcontruction1994@gmail.com", photo: "/lovable-uploads/abf58258-b1a0-45bb-a9ce-57ed134d6e31.png" }
+    { name: "Thomas Villacres", role: "Supervisor", phone: "608-333-8120", email: "", photo: "/lovable-uploads/abf58258-b1a0-45bb-a9ce-57ed134d6e31.png" },
+    { name: "Cristian Castro", role: "Company Owner", phone: "608-635-6033", email: "bluestarcontruction1994@gmail.com", photo: "/lovable-uploads/fd1bdbd5-481a-4c8d-8344-c9650c6f34b6.png" }
   ];
 
   return (
@@ -338,7 +338,7 @@ const Index = () => {
                   {contact.email && (
                     <div className="flex items-start group-hover:text-primary transition-colors">
                       <Mail className="h-5 w-5 mr-3 mt-0.5 text-accent group-hover:text-primary transition-colors flex-shrink-0" />
-                      <a href={`mailto:${contact.email}`} className="text-base hover:underline break-all">
+                      <a href={`mailto:${contact.email}`} className="text-sm font-medium hover:underline break-all tracking-wide">
                         {contact.email}
                       </a>
                     </div>
