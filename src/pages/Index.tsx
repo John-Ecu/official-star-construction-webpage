@@ -36,10 +36,10 @@ const Index = () => {
   ];
 
   const contacts = [
-    { name: "John Castro", role: "Account Executive", phone: "608-358-3706", email: "john.castroflores2000@gmail.com" },
-    { name: "Mili Castro", role: "Accountant & Manager", phone: "608-698-7669", email: "castromary1220@yahoo.com" },
-    { name: "Thomas Villacres", role: "Co-Owner", phone: "608-333-8120", email: "" },
-    { name: "Cristian Castro", role: "Co-Owner", phone: "608-635-6033", email: "bluestarcontruction1994@gmail.com" }
+    { name: "John Castro", role: "Account Executive", phone: "608-358-3706", email: "john.castroflores2000@gmail.com", photo: "/lovable-uploads/fd1bdbd5-481a-4c8d-8344-c9650c6f34b6.png" },
+    { name: "Mili Castro", role: "Accountant & Manager", phone: "608-698-7669", email: "castromary1220@yahoo.com", photo: "/lovable-uploads/0434e918-a574-4f1c-bfe1-25221834808c.png" },
+    { name: "Thomas Villacres", role: "Co-Owner", phone: "608-333-8120", email: "", photo: "/lovable-uploads/f2647afe-985c-4486-8b27-8c6dd9a58cbe.png" },
+    { name: "Cristian Castro", role: "Co-Owner", phone: "608-635-6033", email: "bluestarcontruction1994@gmail.com", photo: "/lovable-uploads/abf58258-b1a0-45bb-a9ce-57ed134d6e31.png" }
   ];
 
   return (
@@ -308,10 +308,21 @@ const Index = () => {
             {contacts.map((contact, index) => (
               <Card 
                 key={contact.name} 
-                className="bg-white text-foreground hover:shadow-glow transition-all duration-500 hover:scale-105 group animate-slide-up"
+                className="bg-white text-foreground hover:shadow-glow transition-all duration-500 hover:scale-105 group animate-slide-up overflow-hidden"
                 style={{animationDelay: `${0.1 * index}s`}}
               >
-                <CardHeader className="text-center pb-6">
+                <CardHeader className="text-center pb-4 relative">
+                  <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-primary/20 group-hover:border-primary/40 transition-colors bg-black">
+                    <img 
+                      src={contact.photo} 
+                      alt={contact.name}
+                      className="w-full h-full object-cover object-center"
+                      style={{
+                        filter: 'brightness(1.1) contrast(1.1)',
+                        backgroundColor: '#000000'
+                      }}
+                    />
+                  </div>
                   <CardTitle className="text-xl group-hover:text-primary transition-colors">{contact.name}</CardTitle>
                   <CardDescription className="text-primary font-bold text-base">
                     {contact.role}
