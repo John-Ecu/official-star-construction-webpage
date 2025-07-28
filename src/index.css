@@ -8,50 +8,50 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Wisconsin-inspired color palette */
+    /* Star Construction LLC - Blue & Gold theme */
     --background: 0 0% 100%;
-    --foreground: 158 20% 15%;
+    --foreground: 213 94% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 158 20% 15%;
+    --card-foreground: 213 94% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 158 20% 15%;
+    --popover-foreground: 213 94% 15%;
 
-    /* Forest Green - Wisconsin's natural beauty */
-    --primary: 158 64% 18%;
+    /* Deep Blue - Professional construction blue */
+    --primary: 213 94% 36%;
     --primary-foreground: 0 0% 98%;
-    --primary-glow: 158 64% 28%;
+    --primary-glow: 213 94% 46%;
 
-    /* Lake Blue - Wisconsin's lakes */
-    --secondary: 200 85% 45%;
-    --secondary-foreground: 0 0% 98%;
+    /* Gold/Yellow - Star Construction accent */
+    --secondary: 45 93% 47%;
+    --secondary-foreground: 213 94% 20%;
 
-    /* Cream - Dairy state heritage */
-    --muted: 45 25% 96%;
-    --muted-foreground: 158 15% 45%;
+    /* Light blue/gray for muted elements */
+    --muted: 210 40% 96%;
+    --muted-foreground: 213 20% 45%;
 
-    /* Golden accent - Like autumn leaves */
-    --accent: 42 87% 55%;
-    --accent-foreground: 158 20% 15%;
+    /* Bright Gold accent - Star Construction gold */
+    --accent: 45 93% 47%;
+    --accent-foreground: 213 94% 20%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 158 20% 90%;
-    --input: 158 20% 90%;
-    --ring: 158 64% 18%;
+    --border: 213 20% 90%;
+    --input: 213 20% 90%;
+    --ring: 213 94% 36%;
 
     --radius: 0.75rem;
 
     /* Enhanced gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(158 64% 18%), hsl(158 64% 28%));
-    --gradient-hero: linear-gradient(135deg, hsl(158 64% 18%), hsl(200 85% 45%));
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(45 25% 98%));
+    --gradient-primary: linear-gradient(135deg, hsl(213 94% 36%), hsl(213 94% 46%));
+    --gradient-hero: linear-gradient(135deg, hsl(213 94% 36%), hsl(213 94% 20%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(210 40% 98%));
 
     /* Shadows */
-    --shadow-soft: 0 4px 20px -4px hsl(158 64% 18% / 0.1);
-    --shadow-glow: 0 0 30px hsl(158 64% 28% / 0.3);
+    --shadow-soft: 0 4px 20px -4px hsl(213 94% 36% / 0.1);
+    --shadow-glow: 0 0 30px hsl(213 94% 46% / 0.3);
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 158 15% 25%;
@@ -64,52 +64,52 @@ All colors MUST be HSL.
   }
 
   .dark {
-    /* Dark mode with Wisconsin evening tones */
-    --background: 158 20% 8%;
-    --foreground: 45 25% 95%;
+    /* Dark mode - Star Construction LLC theme */
+    --background: 213 94% 8%;
+    --foreground: 45 93% 95%;
 
-    --card: 158 20% 10%;
-    --card-foreground: 45 25% 95%;
+    --card: 213 94% 10%;
+    --card-foreground: 45 93% 95%;
 
-    --popover: 158 20% 10%;
-    --popover-foreground: 45 25% 95%;
+    --popover: 213 94% 10%;
+    --popover-foreground: 45 93% 95%;
 
-    --primary: 158 64% 45%;
-    --primary-foreground: 158 20% 8%;
-    --primary-glow: 158 64% 55%;
+    --primary: 213 94% 50%;
+    --primary-foreground: 213 94% 8%;
+    --primary-glow: 213 94% 60%;
 
-    --secondary: 200 85% 35%;
-    --secondary-foreground: 45 25% 95%;
+    --secondary: 45 93% 55%;
+    --secondary-foreground: 213 94% 8%;
 
-    --muted: 158 15% 15%;
-    --muted-foreground: 158 10% 65%;
+    --muted: 213 20% 15%;
+    --muted-foreground: 213 20% 65%;
 
-    --accent: 42 87% 60%;
-    --accent-foreground: 158 20% 8%;
+    --accent: 45 93% 55%;
+    --accent-foreground: 213 94% 8%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 158 15% 20%;
-    --input: 158 15% 20%;
-    --ring: 158 64% 45%;
+    --border: 213 20% 20%;
+    --input: 213 20% 20%;
+    --ring: 213 94% 50%;
 
     /* Enhanced dark gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(158 64% 45%), hsl(158 64% 55%));
-    --gradient-hero: linear-gradient(135deg, hsl(158 20% 8%), hsl(158 64% 15%));
-    --gradient-card: linear-gradient(145deg, hsl(158 20% 10%), hsl(158 15% 12%));
+    --gradient-primary: linear-gradient(135deg, hsl(213 94% 50%), hsl(213 94% 60%));
+    --gradient-hero: linear-gradient(135deg, hsl(213 94% 8%), hsl(213 94% 15%));
+    --gradient-card: linear-gradient(145deg, hsl(213 94% 10%), hsl(213 20% 12%));
 
-    --shadow-soft: 0 4px 20px -4px hsl(158 64% 5% / 0.3);
-    --shadow-glow: 0 0 30px hsl(158 64% 45% / 0.2);
+    --shadow-soft: 0 4px 20px -4px hsl(213 94% 5% / 0.3);
+    --shadow-glow: 0 0 30px hsl(213 94% 50% / 0.2);
 
-    --sidebar-background: 158 20% 8%;
-    --sidebar-foreground: 45 25% 85%;
-    --sidebar-primary: 158 64% 45%;
-    --sidebar-primary-foreground: 158 20% 8%;
-    --sidebar-accent: 158 15% 15%;
-    --sidebar-accent-foreground: 158 64% 45%;
-    --sidebar-border: 158 15% 20%;
-    --sidebar-ring: 158 64% 45%;
+    --sidebar-background: 213 94% 8%;
+    --sidebar-foreground: 45 93% 85%;
+    --sidebar-primary: 213 94% 50%;
+    --sidebar-primary-foreground: 213 94% 8%;
+    --sidebar-accent: 213 20% 15%;
+    --sidebar-accent-foreground: 213 94% 50%;
+    --sidebar-border: 213 20% 20%;
+    --sidebar-ring: 213 94% 50%;
   }
 }
 
