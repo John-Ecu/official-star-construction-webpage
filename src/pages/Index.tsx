@@ -5,7 +5,7 @@ import { Phone, Mail, MapPin, Star, Shield, Users, CheckCircle } from "lucide-re
 
 const Index = () => {
   const services = [
-    { name: "EIFS", description: "Exterior Insulation and Finishing Systems" },
+    { name: "EIFS", description: "Exterior Insulation and Finish System (EIFS)" },
     { name: "Stone Installation", description: "Professional stone work for residential and commercial" },
     { name: "Insulcrete", description: "Insulated concrete installation and finishing" },
     { name: "Caulking", description: "Sealing for windows, doors, and joints" },
