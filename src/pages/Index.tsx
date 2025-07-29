@@ -143,6 +143,62 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Licensed & Insured Section */}
+      <section className="py-16 bg-gradient-to-br from-primary/5 to-secondary/5">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12 animate-fade-in">
+            <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+              🛡️ Licensed & Insured
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto text-lg leading-relaxed">
+              Star Construction LLC is fully licensed and insured in Wisconsin. 
+              Verify our active licenses through the Wisconsin Department of Safety and Professional Services.
+            </p>
+          </div>
+          <div className="max-w-4xl mx-auto">
+            <Card className="bg-gradient-card shadow-soft border-0 animate-slide-up">
+              <CardContent className="p-8">
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div className="text-center">
+                    <h3 className="text-xl font-semibold mb-4 text-primary">Cristian (Owner)</h3>
+                    <div className="space-y-3">
+                      <div className="bg-background/50 p-4 rounded-lg">
+                        <p className="text-sm text-muted-foreground mb-1">Dwelling Contractor Qualifier</p>
+                        <p className="font-mono text-lg font-semibold">3397 - DCQ</p>
+                      </div>
+                      <div className="bg-background/50 p-4 rounded-lg">
+                        <p className="text-sm text-muted-foreground mb-1">Dwelling Contractor License</p>
+                        <p className="font-mono text-lg font-semibold">3033 - DCFR</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="text-center">
+                    <h3 className="text-xl font-semibold mb-4 text-primary">Project Manager</h3>
+                    <div className="space-y-3">
+                      <div className="bg-background/50 p-4 rounded-lg">
+                        <p className="text-sm text-muted-foreground mb-1">Dwelling Contractor Qualifier</p>
+                        <p className="font-mono text-lg font-semibold">Par-0000708265</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="text-center mt-8">
+                  <a 
+                    href="https://app.wi.gov/dspslicenselookup/LicenseLookup.aspx" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center bg-primary text-primary-foreground hover:bg-primary/90 px-6 py-3 rounded-lg font-semibold transition-colors"
+                  >
+                    <Shield className="h-5 w-5 mr-2" />
+                    Verify Our Licenses on DSPS Website
+                  </a>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Services Section */}
       <section className="py-20 bg-gradient-to-b from-background to-muted/20">
         <div className="container mx-auto px-4">
