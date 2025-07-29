@@ -184,7 +184,7 @@ const Index = () => {
                 </div>
                 <div className="text-center mt-8">
                   <a 
-                    href="https://app.wi.gov/dspslicenselookup/LicenseLookup.aspx" 
+                    href="https://license.wi.gov/s/license-lookup" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center bg-primary text-primary-foreground hover:bg-primary/90 px-6 py-3 rounded-lg font-semibold transition-colors"
