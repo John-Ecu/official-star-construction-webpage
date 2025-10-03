@@ -389,18 +389,17 @@ const Index = () => {
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <div className="flex items-center group-hover:text-primary transition-colors">
-                    <Phone className="h-5 w-5 mr-3 text-accent group-hover:text-primary transition-colors" />
-                    <a 
-                      href={`tel:${contact.phone}`} 
-                      className="text-base hover:underline font-medium"
-                      style={{
-                        filter: ["Cristian Castro", "Mili Castro", "Thomas Villacres"].includes(contact.name) ? 'blur(5px)' : 'none'
-                      }}
-                    >
-                      {contact.phone}
-                    </a>
-                  </div>
+                  {contact.name === "John Castro" && (
+                    <div className="flex items-center group-hover:text-primary transition-colors">
+                      <Phone className="h-5 w-5 mr-3 text-accent group-hover:text-primary transition-colors" />
+                      <a 
+                        href={`tel:${contact.phone}`} 
+                        className="text-base hover:underline font-medium"
+                      >
+                        {contact.phone}
+                      </a>
+                    </div>
+                  )}
                   {contact.email && (
                     <div className="flex items-start group-hover:text-primary transition-colors">
                       <Mail className="h-5 w-5 mr-3 mt-0.5 text-accent group-hover:text-primary transition-colors flex-shrink-0" />
