@@ -376,7 +376,9 @@ const Index = () => {
                       alt={contact.name}
                       className="w-full h-full object-cover object-center"
                       style={{
-                        filter: 'brightness(1.1) contrast(1.1)',
+                        filter: contact.name === "Cristian Castro" 
+                          ? 'blur(10px) brightness(1.1) contrast(1.1)' 
+                          : 'brightness(1.1) contrast(1.1)',
                         backgroundColor: '#000000'
                       }}
                     />
@@ -389,7 +391,13 @@ const Index = () => {
                 <CardContent className="space-y-4">
                   <div className="flex items-center group-hover:text-primary transition-colors">
                     <Phone className="h-5 w-5 mr-3 text-accent group-hover:text-primary transition-colors" />
-                    <a href={`tel:${contact.phone}`} className="text-base hover:underline font-medium">
+                    <a 
+                      href={`tel:${contact.phone}`} 
+                      className="text-base hover:underline font-medium"
+                      style={{
+                        filter: contact.name === "Cristian Castro" ? 'blur(5px)' : 'none'
+                      }}
+                    >
                       {contact.phone}
                     </a>
                   </div>
