@@ -372,11 +372,11 @@ const Index = () => {
                 <CardHeader className="text-center pb-4 relative">
                   <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-primary/20 group-hover:border-primary/40 transition-colors bg-black">
                     <img 
-                      src={contact.photo} 
+                      src={contact.photo}
                       alt={contact.name}
                       className="w-full h-full object-cover object-center"
                       style={{
-                        filter: contact.name === "Cristian Castro" 
+                        filter: ["Cristian Castro", "Mili Castro", "Thomas Villacres"].includes(contact.name)
                           ? 'blur(10px) brightness(1.1) contrast(1.1)' 
                           : 'brightness(1.1) contrast(1.1)',
                         backgroundColor: '#000000'
@@ -395,7 +395,7 @@ const Index = () => {
                       href={`tel:${contact.phone}`} 
                       className="text-base hover:underline font-medium"
                       style={{
-                        filter: contact.name === "Cristian Castro" ? 'blur(5px)' : 'none'
+                        filter: ["Cristian Castro", "Mili Castro", "Thomas Villacres"].includes(contact.name) ? 'blur(5px)' : 'none'
                       }}
                     >
                       {contact.phone}
