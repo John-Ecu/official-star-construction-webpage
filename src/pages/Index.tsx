@@ -7,6 +7,13 @@ import chimneyStone1a from "@/assets/gallery/chimney-stone-1a.jpeg";
 import chimneyStone1b from "@/assets/gallery/chimney-stone-1b.jpeg";
 import chimneyStone1c from "@/assets/gallery/chimney-stone-1c.jpeg";
 import chimneyStone2 from "@/assets/gallery/chimney-stone-2.jpeg";
+import summer2024Before from "@/assets/gallery/summer2024-stone-before.jpeg";
+import summer2024Stone1 from "@/assets/gallery/summer2024-stone-1.jpeg";
+import summer2024Stone2 from "@/assets/gallery/summer2024-stone-2.jpeg";
+import summer2024Stone3 from "@/assets/gallery/summer2024-stone-3.jpeg";
+import summer2024Stone4 from "@/assets/gallery/summer2024-stone-4.jpeg";
+import summer2024Stone5 from "@/assets/gallery/summer2024-stone-5.jpeg";
+import summer2024Stone6 from "@/assets/gallery/summer2024-stone-6.jpeg";
 
 const Index = () => {
   const services = [
@@ -406,6 +413,158 @@ const Index = () => {
                 </div>
                 <p className="text-muted-foreground">
                   A sleek, contemporary chimney with dark slate stone installation—adding modern elegance to a new construction home.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Summer 2024 Exterior Stone Project - Section Header */}
+            <div className="lg:col-span-3 md:col-span-2 col-span-1 animate-fade-in" style={{animationDelay: '0.5s'}}>
+              <div className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-xl p-6 text-center">
+                <h3 className="text-2xl font-bold text-primary mb-2">🏠 Summer 2024 Residential Stone Installation</h3>
+                <p className="text-muted-foreground">Complete exterior stone transformation for a new construction home in Dane County</p>
+              </div>
+            </div>
+
+            {/* Summer 2024 - Before */}
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.6s'}}>
+              <div className="aspect-[4/3] overflow-hidden relative">
+                <div className="absolute top-3 left-3 z-10 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-semibold">Before</div>
+                <img 
+                  src={summer2024Before} 
+                  alt="Before stone installation"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center mb-2">
+                  <Camera className="h-5 w-5 mr-2 text-accent" />
+                  <h3 className="font-semibold text-lg text-primary">Before Installation</h3>
+                </div>
+                <p className="text-muted-foreground">
+                  The home before exterior stone work—prepared with proper sheathing and weather barriers.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Summer 2024 - In Progress 1 */}
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.7s'}}>
+              <div className="aspect-[4/3] overflow-hidden relative">
+                <div className="absolute top-3 left-3 z-10 bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm font-semibold">In Progress</div>
+                <img 
+                  src={summer2024Stone1} 
+                  alt="Stone installation in progress"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center mb-2">
+                  <Camera className="h-5 w-5 mr-2 text-accent" />
+                  <h3 className="font-semibold text-lg text-primary">Stone Work Begins</h3>
+                </div>
+                <p className="text-muted-foreground">
+                  Natural limestone being carefully placed, starting from the foundation and working upward.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Summer 2024 - In Progress 2 */}
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.8s'}}>
+              <div className="aspect-[4/3] overflow-hidden relative">
+                <div className="absolute top-3 left-3 z-10 bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm font-semibold">In Progress</div>
+                <img 
+                  src={summer2024Stone2} 
+                  alt="Stone installation progress"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center mb-2">
+                  <Camera className="h-5 w-5 mr-2 text-accent" />
+                  <h3 className="font-semibold text-lg text-primary">Precision Craftsmanship</h3>
+                </div>
+                <p className="text-muted-foreground">
+                  Each stone is hand-selected and positioned for a seamless, elegant exterior finish.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Summer 2024 - Completed Views */}
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.9s'}}>
+              <div className="aspect-[4/3] overflow-hidden relative">
+                <div className="absolute top-3 left-3 z-10 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">Completed</div>
+                <img 
+                  src={summer2024Stone3} 
+                  alt="Completed stone exterior - corner view"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center mb-2">
+                  <Camera className="h-5 w-5 mr-2 text-accent" />
+                  <h3 className="font-semibold text-lg text-primary">Corner Detail</h3>
+                </div>
+                <p className="text-muted-foreground">
+                  Showcasing the meticulous corner work with natural limestone creating a timeless look.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '1s'}}>
+              <div className="aspect-[4/3] overflow-hidden relative">
+                <div className="absolute top-3 left-3 z-10 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">Completed</div>
+                <img 
+                  src={summer2024Stone4} 
+                  alt="Completed stone exterior with sliding door"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center mb-2">
+                  <Camera className="h-5 w-5 mr-2 text-accent" />
+                  <h3 className="font-semibold text-lg text-primary">Patio Entrance</h3>
+                </div>
+                <p className="text-muted-foreground">
+                  Stone work elegantly frames the sliding door entrance with clean, professional lines.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '1.1s'}}>
+              <div className="aspect-[4/3] overflow-hidden relative">
+                <div className="absolute top-3 left-3 z-10 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">Completed</div>
+                <img 
+                  src={summer2024Stone5} 
+                  alt="Completed stone exterior - front view"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center mb-2">
+                  <Camera className="h-5 w-5 mr-2 text-accent" />
+                  <h3 className="font-semibold text-lg text-primary">Front Elevation</h3>
+                </div>
+                <p className="text-muted-foreground">
+                  Full exterior stone coverage providing durability and curb appeal for years to come.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '1.2s'}}>
+              <div className="aspect-[4/3] overflow-hidden relative">
+                <div className="absolute top-3 left-3 z-10 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">Completed</div>
+                <img 
+                  src={summer2024Stone6} 
+                  alt="Completed stone exterior - side view"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center mb-2">
+                  <Camera className="h-5 w-5 mr-2 text-accent" />
+                  <h3 className="font-semibold text-lg text-primary">Side Elevation</h3>
+                </div>
+                <p className="text-muted-foreground">
+                  Consistent stone pattern wrapping around the entire home for a cohesive, polished finish.
                 </p>
               </CardContent>
             </Card>
