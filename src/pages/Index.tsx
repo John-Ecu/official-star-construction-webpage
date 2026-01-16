@@ -361,62 +361,31 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            {/* Gallery Item 2 - Chimney 1 View A */}
+            {/* Gallery Item 2 - Chimney 1 Combined Views */}
             <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.1s'}}>
-              <div className="aspect-[4/3] overflow-hidden">
-                <img 
-                  src={chimneyStone1a} 
-                  alt="Stone chimney installation - side view"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
+              <div className="grid grid-cols-2 gap-1">
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img 
+                    src={chimneyStone1a} 
+                    alt="Stone chimney installation - side view"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img 
+                    src={chimneyStone1c} 
+                    alt="Stone chimney installation - front view"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
               </div>
               <CardContent className="p-6">
                 <div className="flex items-center mb-2">
                   <Camera className="h-5 w-5 mr-2 text-accent" />
-                  <h3 className="font-semibold text-lg text-primary">Stone Chimney - Side View</h3>
+                  <h3 className="font-semibold text-lg text-primary">Stone Chimney - Side & Front Views</h3>
                 </div>
                 <p className="text-muted-foreground">
-                  Elegant stone exterior added to a floor-to-ceiling chimney, creating a stunning focal point in this Wisconsin home.
-                </p>
-              </CardContent>
-            </Card>
-
-            {/* Gallery Item 3 - Chimney 1 View B */}
-            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.2s'}}>
-              <div className="aspect-[4/3] overflow-hidden">
-                <img 
-                  src={chimneyStone1b} 
-                  alt="Stone chimney installation - angled view"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-              </div>
-              <CardContent className="p-6">
-                <div className="flex items-center mb-2">
-                  <Camera className="h-5 w-5 mr-2 text-accent" />
-                  <h3 className="font-semibold text-lg text-primary">Stone Chimney - Angled View</h3>
-                </div>
-                <p className="text-muted-foreground">
-                  Another angle showcasing the natural stone finish that extends from floor to vaulted ceiling with exposed beam.
-                </p>
-              </CardContent>
-            </Card>
-
-            {/* Gallery Item 4 - Chimney 1 View C */}
-            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.3s'}}>
-              <div className="aspect-[4/3] overflow-hidden">
-                <img 
-                  src={chimneyStone1c} 
-                  alt="Stone chimney installation - front view"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-              </div>
-              <CardContent className="p-6">
-                <div className="flex items-center mb-2">
-                  <Camera className="h-5 w-5 mr-2 text-accent" />
-                  <h3 className="font-semibold text-lg text-primary">Stone Chimney - Front View</h3>
-                </div>
-                <p className="text-muted-foreground">
-                  The completed chimney as seen from the living area—a mesmerizing centerpiece with custom stonework.
+                  Elegant floor-to-ceiling stone chimney—a stunning focal point and mesmerizing centerpiece in this Wisconsin home.
                 </p>
               </CardContent>
             </Card>
