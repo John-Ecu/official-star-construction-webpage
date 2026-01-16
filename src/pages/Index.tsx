@@ -1,7 +1,8 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Phone, Mail, MapPin, Star, Shield, Users, CheckCircle } from "lucide-react";
+import { Phone, Mail, MapPin, Star, Shield, Users, CheckCircle, Camera } from "lucide-react";
+import insulcreteWork1 from "@/assets/gallery/insulcrete-work-1.jpeg";
 
 const Index = () => {
   const services = [
@@ -289,6 +290,43 @@ const Index = () => {
                 </div>
               </CardContent>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Photo Gallery Section */}
+      <section className="py-20 bg-gradient-to-b from-background to-muted/20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+              📸 Our Work in Action
+            </h2>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+              Take a look at our team delivering quality EIFS and Insulcrete installations across Wisconsin.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {/* Gallery Item 1 */}
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up">
+              <div className="aspect-[4/3] overflow-hidden">
+                <img 
+                  src={insulcreteWork1} 
+                  alt="Insulcrete installation in progress"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center mb-2">
+                  <Camera className="h-5 w-5 mr-2 text-accent" />
+                  <h3 className="font-semibold text-lg text-primary">Insulcrete Application</h3>
+                </div>
+                <p className="text-muted-foreground">
+                  Our skilled crew applying Insulcrete to a residential foundation, ensuring proper insulation and a durable finish.
+                </p>
+              </CardContent>
+            </Card>
+            
+            {/* More gallery items will be added here */}
           </div>
         </div>
       </section>
