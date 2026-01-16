@@ -521,8 +521,7 @@ const Index = () => {
 
             {/* Summer 2024 - In Progress 1 */}
             <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.7s'}}>
-              <div className="aspect-[4/3] overflow-hidden relative">
-                <div className="absolute top-3 left-3 z-10 bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm font-semibold">In Progress</div>
+              <div className="aspect-[4/3] overflow-hidden">
                 <img 
                   src={summer2024Stone1} 
                   alt="Stone installation in progress"
@@ -542,8 +541,7 @@ const Index = () => {
 
             {/* Summer 2024 - In Progress 2 */}
             <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.8s'}}>
-              <div className="aspect-[4/3] overflow-hidden relative">
-                <div className="absolute top-3 left-3 z-10 bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm font-semibold">In Progress</div>
+              <div className="aspect-[4/3] overflow-hidden">
                 <img 
                   src={summer2024Stone2} 
                   alt="Stone installation progress"
@@ -561,50 +559,9 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            {/* Summer 2024 - Completed Views */}
-            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.9s'}}>
-              <div className="aspect-[4/3] overflow-hidden relative">
-                <div className="absolute top-3 left-3 z-10 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">Completed</div>
-                <img 
-                  src={summer2024Stone3} 
-                  alt="Completed stone exterior - corner view"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-              </div>
-              <CardContent className="p-6">
-                <div className="flex items-center mb-2">
-                  <Camera className="h-5 w-5 mr-2 text-accent" />
-                  <h3 className="font-semibold text-lg text-primary">Corner Detail</h3>
-                </div>
-                <p className="text-muted-foreground">
-                  Showcasing the meticulous corner work with natural limestone creating a timeless look.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '1.1s'}}>
-              <div className="aspect-[4/3] overflow-hidden relative">
-                <div className="absolute top-3 left-3 z-10 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">Completed</div>
-                <img 
-                  src={summer2024Stone5} 
-                  alt="Completed stone exterior - front view"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-              </div>
-              <CardContent className="p-6">
-                <div className="flex items-center mb-2">
-                  <Camera className="h-5 w-5 mr-2 text-accent" />
-                  <h3 className="font-semibold text-lg text-primary">Front Elevation</h3>
-                </div>
-                <p className="text-muted-foreground">
-                  Full exterior stone coverage providing durability and curb appeal for years to come.
-                </p>
-              </CardContent>
-            </Card>
 
             <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '1.2s'}}>
-              <div className="aspect-[4/3] overflow-hidden relative">
-                <div className="absolute top-3 left-3 z-10 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">Completed</div>
+              <div className="aspect-[4/3] overflow-hidden">
                 <img 
                   src={summer2024Stone6} 
                   alt="Completed stone exterior - side view"
@@ -674,8 +631,7 @@ const Index = () => {
 
             {/* EIFS - Step 3: Stone Complete */}
             <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '1.6s'}}>
-              <div className="aspect-[4/3] overflow-hidden relative">
-                <div className="absolute top-3 left-3 z-10 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">Completed</div>
+              <div className="aspect-[4/3] overflow-hidden">
                 <img 
                   src={eifsStoneComplete3} 
                   alt="Completed EIFS stone installation"
@@ -703,8 +659,7 @@ const Index = () => {
 
             {/* EIFS Project 2 - Image 1 */}
             <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '1.8s'}}>
-              <div className="aspect-[4/3] overflow-hidden relative">
-                <div className="absolute top-3 left-3 z-10 bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm font-semibold">In Progress</div>
+              <div className="aspect-[4/3] overflow-hidden">
                 <img 
                   src={eifsProject2_1} 
                   alt="EIFS application with scaffolding"
@@ -724,8 +679,7 @@ const Index = () => {
 
             {/* EIFS Project 2 - Image 2 */}
             <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '1.9s'}}>
-              <div className="aspect-[4/3] overflow-hidden relative">
-                <div className="absolute top-3 left-3 z-10 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">Completed</div>
+              <div className="aspect-[4/3] overflow-hidden">
                 <img 
                   src={eifsProject2_2} 
                   alt="Completed EIFS with stone wainscot"
@@ -745,8 +699,7 @@ const Index = () => {
 
             {/* EIFS Project 2 - Image 3 */}
             <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '2s'}}>
-              <div className="aspect-[4/3] overflow-hidden relative">
-                <div className="absolute top-3 left-3 z-10 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">Completed</div>
+              <div className="aspect-[4/3] overflow-hidden">
                 <img 
                   src={eifsProject2_3} 
                   alt="Luxury home with EIFS and stone"
@@ -766,8 +719,7 @@ const Index = () => {
 
             {/* EIFS Project 2 - Image 4 */}
             <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '2.1s'}}>
-              <div className="aspect-[4/3] overflow-hidden relative">
-                <div className="absolute top-3 left-3 z-10 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">Completed</div>
+              <div className="aspect-[4/3] overflow-hidden">
                 <img 
                   src={eifsProject2_4} 
                   alt="Commercial building with stone and EIFS"
@@ -787,8 +739,7 @@ const Index = () => {
 
             {/* EIFS Project 2 - Image 5 */}
             <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '2.2s'}}>
-              <div className="aspect-[4/3] overflow-hidden relative">
-                <div className="absolute top-3 left-3 z-10 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">Completed</div>
+              <div className="aspect-[4/3] overflow-hidden">
                 <img 
                   src={eifsProject2_5} 
                   alt="Commercial building with brick and stone"
@@ -808,8 +759,7 @@ const Index = () => {
 
             {/* EIFS Project 2 - Image 6 */}
             <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '2.3s'}}>
-              <div className="aspect-[4/3] overflow-hidden relative">
-                <div className="absolute top-3 left-3 z-10 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">Completed</div>
+              <div className="aspect-[4/3] overflow-hidden">
                 <img 
                   src={eifsProject2_6} 
                   alt="EIFS with stone and brick"
@@ -849,8 +799,7 @@ const Index = () => {
 
             {/* EIFS Project 2 - Image 8 */}
             <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '2.5s'}}>
-              <div className="aspect-[4/3] overflow-hidden relative">
-                <div className="absolute top-3 left-3 z-10 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">Completed</div>
+              <div className="aspect-[4/3] overflow-hidden">
                 <img 
                   src={eifsProject2_8} 
                   alt="EIFS with arched windows and stone"
@@ -886,8 +835,7 @@ const Index = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Large Home EIFS Prep */}
             <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up">
-              <div className="aspect-[4/3] overflow-hidden relative">
-                <div className="absolute top-3 left-3 z-10 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">In Progress</div>
+              <div className="aspect-[4/3] overflow-hidden">
                 <img 
                   src={commercial1} 
                   alt="Large residential EIFS prep with scaffolding"
@@ -907,8 +855,7 @@ const Index = () => {
 
             {/* Large Home EIFS Scaffolding */}
             <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.1s'}}>
-              <div className="aspect-[4/3] overflow-hidden relative">
-                <div className="absolute top-3 left-3 z-10 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">In Progress</div>
+              <div className="aspect-[4/3] overflow-hidden">
                 <img 
                   src={commercial2} 
                   alt="Scaffolding setup for large home EIFS"
@@ -928,8 +875,7 @@ const Index = () => {
 
             {/* Avid Hotel */}
             <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.2s'}}>
-              <div className="aspect-[4/3] overflow-hidden relative">
-                <div className="absolute top-3 left-3 z-10 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">Completed</div>
+              <div className="aspect-[4/3] overflow-hidden">
                 <img 
                   src={commercial3} 
                   alt="Avid Hotel commercial EIFS project"
@@ -949,8 +895,7 @@ const Index = () => {
 
             {/* Night Work */}
             <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.3s'}}>
-              <div className="aspect-[4/3] overflow-hidden relative">
-                <div className="absolute top-3 left-3 z-10 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">In Progress</div>
+              <div className="aspect-[4/3] overflow-hidden">
                 <img 
                   src={commercial4} 
                   alt="Night shift commercial construction"
@@ -970,8 +915,7 @@ const Index = () => {
 
             {/* Multi-Story Scaffolding */}
             <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.4s'}}>
-              <div className="aspect-[4/3] overflow-hidden relative">
-                <div className="absolute top-3 left-3 z-10 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">In Progress</div>
+              <div className="aspect-[4/3] overflow-hidden">
                 <img 
                   src={commercial5} 
                   alt="Multi-story building EIFS installation"
@@ -991,8 +935,7 @@ const Index = () => {
 
             {/* Weather Protection */}
             <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.5s'}}>
-              <div className="aspect-[4/3] overflow-hidden relative">
-                <div className="absolute top-3 left-3 z-10 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">In Progress</div>
+              <div className="aspect-[4/3] overflow-hidden">
                 <img 
                   src={commercial6} 
                   alt="Building wrapped for weather protection during EIFS"
@@ -1012,8 +955,7 @@ const Index = () => {
 
             {/* Moonlit Work */}
             <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.6s'}}>
-              <div className="aspect-[4/3] overflow-hidden relative">
-                <div className="absolute top-3 left-3 z-10 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">In Progress</div>
+              <div className="aspect-[4/3] overflow-hidden">
                 <img 
                   src={commercial7} 
                   alt="Evening construction work on commercial building"
@@ -1033,8 +975,7 @@ const Index = () => {
 
             {/* High-Rise OSB */}
             <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.7s'}}>
-              <div className="aspect-[4/3] overflow-hidden relative">
-                <div className="absolute top-3 left-3 z-10 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">In Progress</div>
+              <div className="aspect-[4/3] overflow-hidden">
                 <img 
                   src={commercial8} 
                   alt="Workers on scaffolding applying EIFS"
@@ -1054,8 +995,7 @@ const Index = () => {
 
             {/* Hotel Finish */}
             <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.8s'}}>
-              <div className="aspect-[4/3] overflow-hidden relative">
-                <div className="absolute top-3 left-3 z-10 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">In Progress</div>
+              <div className="aspect-[4/3] overflow-hidden">
                 <img 
                   src={commercial9} 
                   alt="Hotel building with EIFS and ground floor work"
