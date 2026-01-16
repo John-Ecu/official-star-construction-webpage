@@ -29,6 +29,15 @@ import eifsProject2_5 from "@/assets/gallery/eifs-project2-5.jpeg";
 import eifsProject2_6 from "@/assets/gallery/eifs-project2-6.jpeg";
 import eifsProject2_7 from "@/assets/gallery/eifs-project2-7.jpeg";
 import eifsProject2_8 from "@/assets/gallery/eifs-project2-8.jpeg";
+import commercial1 from "@/assets/gallery/commercial-1.jpeg";
+import commercial2 from "@/assets/gallery/commercial-2.jpeg";
+import commercial3 from "@/assets/gallery/commercial-3.jpeg";
+import commercial4 from "@/assets/gallery/commercial-4.jpeg";
+import commercial5 from "@/assets/gallery/commercial-5.jpeg";
+import commercial6 from "@/assets/gallery/commercial-6.jpeg";
+import commercial7 from "@/assets/gallery/commercial-7.jpeg";
+import commercial8 from "@/assets/gallery/commercial-8.jpeg";
+import commercial9 from "@/assets/gallery/commercial-9.jpeg";
 
 const Index = () => {
   const services = [
@@ -906,6 +915,211 @@ const Index = () => {
                 </div>
                 <p className="text-muted-foreground">
                   Custom EIFS finish with decorative keystones above arched windows and natural stone base.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Commercial Projects Section */}
+      <section className="py-20 bg-gradient-to-br from-muted/30 to-secondary/10">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+              🏢 Commercial & Large-Scale Projects
+            </h2>
+            <p className="text-muted-foreground max-w-4xl mx-auto text-lg leading-relaxed">
+              We've partnered with major construction companies on large-scale commercial projects, 
+              performing EIFS installation and everyday construction labor on hotels, multi-story buildings, and more.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Large Home EIFS Prep */}
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up">
+              <div className="aspect-[4/3] overflow-hidden relative">
+                <div className="absolute top-3 left-3 z-10 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">In Progress</div>
+                <img 
+                  src={commercial1} 
+                  alt="Large residential EIFS prep with scaffolding"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center mb-2">
+                  <Camera className="h-5 w-5 mr-2 text-accent" />
+                  <h3 className="font-semibold text-lg text-primary">Luxury Home EIFS Prep</h3>
+                </div>
+                <p className="text-muted-foreground">
+                  Two-story custom home with foam board insulation installed, ready for EIFS base coat and finish.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Large Home EIFS Scaffolding */}
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.1s'}}>
+              <div className="aspect-[4/3] overflow-hidden relative">
+                <div className="absolute top-3 left-3 z-10 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">In Progress</div>
+                <img 
+                  src={commercial2} 
+                  alt="Scaffolding setup for large home EIFS"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center mb-2">
+                  <Camera className="h-5 w-5 mr-2 text-accent" />
+                  <h3 className="font-semibold text-lg text-primary">Full Scaffolding Setup</h3>
+                </div>
+                <p className="text-muted-foreground">
+                  Professional scaffolding for safe access to all exterior surfaces during EIFS installation.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Avid Hotel */}
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.2s'}}>
+              <div className="aspect-[4/3] overflow-hidden relative">
+                <div className="absolute top-3 left-3 z-10 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">Completed</div>
+                <img 
+                  src={commercial3} 
+                  alt="Avid Hotel commercial EIFS project"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center mb-2">
+                  <Camera className="h-5 w-5 mr-2 text-accent" />
+                  <h3 className="font-semibold text-lg text-primary">Hotel EIFS Exterior</h3>
+                </div>
+                <p className="text-muted-foreground">
+                  Multi-story hotel with clean EIFS finish in tan and gray tones with bold accent colors.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Night Work */}
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.3s'}}>
+              <div className="aspect-[4/3] overflow-hidden relative">
+                <div className="absolute top-3 left-3 z-10 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">In Progress</div>
+                <img 
+                  src={commercial4} 
+                  alt="Night shift commercial construction"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center mb-2">
+                  <Camera className="h-5 w-5 mr-2 text-accent" />
+                  <h3 className="font-semibold text-lg text-primary">Extended Hours Work</h3>
+                </div>
+                <p className="text-muted-foreground">
+                  Working night shifts with boom lifts to meet tight project deadlines on commercial builds.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Multi-Story Scaffolding */}
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.4s'}}>
+              <div className="aspect-[4/3] overflow-hidden relative">
+                <div className="absolute top-3 left-3 z-10 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">In Progress</div>
+                <img 
+                  src={commercial5} 
+                  alt="Multi-story building EIFS installation"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center mb-2">
+                  <Camera className="h-5 w-5 mr-2 text-accent" />
+                  <h3 className="font-semibold text-lg text-primary">Multi-Story EIFS</h3>
+                </div>
+                <p className="text-muted-foreground">
+                  Six-story building with full scaffolding for EIFS application on large commercial project.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Weather Protection */}
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.5s'}}>
+              <div className="aspect-[4/3] overflow-hidden relative">
+                <div className="absolute top-3 left-3 z-10 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">In Progress</div>
+                <img 
+                  src={commercial6} 
+                  alt="Building wrapped for weather protection during EIFS"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center mb-2">
+                  <Camera className="h-5 w-5 mr-2 text-accent" />
+                  <h3 className="font-semibold text-lg text-primary">Weather-Protected Work</h3>
+                </div>
+                <p className="text-muted-foreground">
+                  Full plastic enclosure protecting EIFS application during cold weather conditions.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Moonlit Work */}
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.6s'}}>
+              <div className="aspect-[4/3] overflow-hidden relative">
+                <div className="absolute top-3 left-3 z-10 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">In Progress</div>
+                <img 
+                  src={commercial7} 
+                  alt="Evening construction work on commercial building"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center mb-2">
+                  <Camera className="h-5 w-5 mr-2 text-accent" />
+                  <h3 className="font-semibold text-lg text-primary">Dedication at Dusk</h3>
+                </div>
+                <p className="text-muted-foreground">
+                  Our crew working into the evening to keep commercial projects on schedule.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* High-Rise OSB */}
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.7s'}}>
+              <div className="aspect-[4/3] overflow-hidden relative">
+                <div className="absolute top-3 left-3 z-10 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">In Progress</div>
+                <img 
+                  src={commercial8} 
+                  alt="Workers on scaffolding applying EIFS"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center mb-2">
+                  <Camera className="h-5 w-5 mr-2 text-accent" />
+                  <h3 className="font-semibold text-lg text-primary">Skilled High-Rise Work</h3>
+                </div>
+                <p className="text-muted-foreground">
+                  Experienced crew working safely at height, preparing substrate for EIFS installation.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Hotel Finish */}
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.8s'}}>
+              <div className="aspect-[4/3] overflow-hidden relative">
+                <div className="absolute top-3 left-3 z-10 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">In Progress</div>
+                <img 
+                  src={commercial9} 
+                  alt="Hotel building with EIFS and ground floor work"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center mb-2">
+                  <Camera className="h-5 w-5 mr-2 text-accent" />
+                  <h3 className="font-semibold text-lg text-primary">Hotel Ground Floor</h3>
+                </div>
+                <p className="text-muted-foreground">
+                  Multi-story hotel with completed EIFS upper floors; ground floor canopy under construction.
                 </p>
               </CardContent>
             </Card>
