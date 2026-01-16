@@ -14,6 +14,9 @@ import summer2024Stone3 from "@/assets/gallery/summer2024-stone-3.jpeg";
 import summer2024Stone4 from "@/assets/gallery/summer2024-stone-4.jpeg";
 import summer2024Stone5 from "@/assets/gallery/summer2024-stone-5.jpeg";
 import summer2024Stone6 from "@/assets/gallery/summer2024-stone-6.jpeg";
+import fireplaceStone3 from "@/assets/gallery/fireplace-stone-3.jpeg";
+import fireplaceStone4 from "@/assets/gallery/fireplace-stone-4.jpeg";
+import fireplaceStone5 from "@/assets/gallery/fireplace-stone-5.jpeg";
 
 const Index = () => {
   const services = [
@@ -417,7 +420,66 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            {/* Summer 2024 Exterior Stone Project - Section Header */}
+            {/* Fireplace 3 - Rustic Stone */}
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.45s'}}>
+              <div className="aspect-[4/3] overflow-hidden">
+                <img 
+                  src={fireplaceStone3} 
+                  alt="Rustic stone fireplace with wood mantel"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center mb-2">
+                  <Camera className="h-5 w-5 mr-2 text-accent" />
+                  <h3 className="font-semibold text-lg text-primary">Rustic Corner Fireplace</h3>
+                </div>
+                <p className="text-muted-foreground">
+                  Beautiful rustic stone chimney with natural wood mantel, creating warmth in this open-concept living space.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Fireplace 4 - Grand Living Room */}
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.5s'}}>
+              <div className="aspect-[4/3] overflow-hidden">
+                <img 
+                  src={fireplaceStone4} 
+                  alt="Grand limestone fireplace with built-in cabinetry"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center mb-2">
+                  <Camera className="h-5 w-5 mr-2 text-accent" />
+                  <h3 className="font-semibold text-lg text-primary">Grand Limestone Fireplace</h3>
+                </div>
+                <p className="text-muted-foreground">
+                  Floor-to-ceiling limestone with custom hearth, flanked by elegant dark wood built-ins.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Fireplace 5 - Multi-Tone Ledger */}
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.55s'}}>
+              <div className="aspect-[4/3] overflow-hidden">
+                <img 
+                  src={fireplaceStone5} 
+                  alt="Multi-tone ledger stone fireplace"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center mb-2">
+                  <Camera className="h-5 w-5 mr-2 text-accent" />
+                  <h3 className="font-semibold text-lg text-primary">Multi-Tone Ledger Stone</h3>
+                </div>
+                <p className="text-muted-foreground">
+                  Stunning stacked ledger stone with warm earth tones, featuring a dark wood floating mantel.
+                </p>
+              </CardContent>
+            </Card>
+
             <div className="lg:col-span-3 md:col-span-2 col-span-1 animate-fade-in" style={{animationDelay: '0.5s'}}>
               <div className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-xl p-6 text-center">
                 <h3 className="text-2xl font-bold text-primary mb-2">🏠 Summer 2024 Residential Stone Installation</h3>
