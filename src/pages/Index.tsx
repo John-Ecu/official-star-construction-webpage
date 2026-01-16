@@ -17,6 +17,7 @@ import summer2024Stone6 from "@/assets/gallery/summer2024-stone-6.jpeg";
 import fireplaceStone3 from "@/assets/gallery/fireplace-stone-3.jpeg";
 import fireplaceStone4 from "@/assets/gallery/fireplace-stone-4.jpeg";
 import fireplaceStone5 from "@/assets/gallery/fireplace-stone-5.jpeg";
+import fireplaceStone6 from "@/assets/gallery/fireplace-stone-6.jpeg";
 
 const Index = () => {
   const services = [
@@ -480,7 +481,28 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <div className="lg:col-span-3 md:col-span-2 col-span-1 animate-fade-in" style={{animationDelay: '0.5s'}}>
+            {/* Fireplace 6 - Corner Gray Stone */}
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.58s'}}>
+              <div className="aspect-[4/3] overflow-hidden">
+                <img 
+                  src={fireplaceStone6} 
+                  alt="Corner gray stone fireplace"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center mb-2">
+                  <Camera className="h-5 w-5 mr-2 text-accent" />
+                  <h3 className="font-semibold text-lg text-primary">Corner Gray Stone Fireplace</h3>
+                </div>
+                <p className="text-muted-foreground">
+                  Cozy corner fireplace with charcoal gray stone and natural wood mantel—a perfect accent for any living room.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Summer 2024 Exterior Stone Project - Section Header */}
+            <div className="lg:col-span-3 md:col-span-2 col-span-1 animate-fade-in" style={{animationDelay: '0.6s'}}>
               <div className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-xl p-6 text-center">
                 <h3 className="text-2xl font-bold text-primary mb-2">🏠 Summer 2024 Residential Stone Installation</h3>
                 <p className="text-muted-foreground">Complete exterior stone transformation for a new construction home in Dane County</p>
