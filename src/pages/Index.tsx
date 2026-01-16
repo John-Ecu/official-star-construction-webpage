@@ -582,26 +582,6 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '1s'}}>
-              <div className="aspect-[4/3] overflow-hidden relative">
-                <div className="absolute top-3 left-3 z-10 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">Completed</div>
-                <img 
-                  src={summer2024Stone4} 
-                  alt="Completed stone exterior with sliding door"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-              </div>
-              <CardContent className="p-6">
-                <div className="flex items-center mb-2">
-                  <Camera className="h-5 w-5 mr-2 text-accent" />
-                  <h3 className="font-semibold text-lg text-primary">Patio Entrance</h3>
-                </div>
-                <p className="text-muted-foreground">
-                  Stone work elegantly frames the sliding door entrance with clean, professional lines.
-                </p>
-              </CardContent>
-            </Card>
-
             <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '1.1s'}}>
               <div className="aspect-[4/3] overflow-hidden relative">
                 <div className="absolute top-3 left-3 z-10 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">Completed</div>
