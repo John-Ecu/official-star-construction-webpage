@@ -21,6 +21,14 @@ import fireplaceStone6 from "@/assets/gallery/fireplace-stone-6.jpeg";
 import eifsStoneLath1 from "@/assets/gallery/eifs-stone-lath-1.jpeg";
 import eifsStoneBase2 from "@/assets/gallery/eifs-stone-base-2.jpeg";
 import eifsStoneComplete3 from "@/assets/gallery/eifs-stone-complete-3.jpeg";
+import eifsProject2_1 from "@/assets/gallery/eifs-project2-1.jpeg";
+import eifsProject2_2 from "@/assets/gallery/eifs-project2-2.jpeg";
+import eifsProject2_3 from "@/assets/gallery/eifs-project2-3.jpeg";
+import eifsProject2_4 from "@/assets/gallery/eifs-project2-4.jpeg";
+import eifsProject2_5 from "@/assets/gallery/eifs-project2-5.jpeg";
+import eifsProject2_6 from "@/assets/gallery/eifs-project2-6.jpeg";
+import eifsProject2_7 from "@/assets/gallery/eifs-project2-7.jpeg";
+import eifsProject2_8 from "@/assets/gallery/eifs-project2-8.jpeg";
 
 const Index = () => {
   const services = [
@@ -723,6 +731,181 @@ const Index = () => {
                 </div>
                 <p className="text-muted-foreground">
                   Beautiful stacked stone installed on the lower exterior, blending seamlessly with the siding above.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* EIFS & Stone Projects - Section Header */}
+            <div className="lg:col-span-3 md:col-span-2 col-span-1 animate-fade-in" style={{animationDelay: '1.7s'}}>
+              <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-xl p-6 text-center">
+                <h3 className="text-2xl font-bold text-primary mb-2">🏢 EIFS & Stone Projects Gallery</h3>
+                <p className="text-muted-foreground">Commercial and residential EIFS with stone accent installations</p>
+              </div>
+            </div>
+
+            {/* EIFS Project 2 - Image 1 */}
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '1.8s'}}>
+              <div className="aspect-[4/3] overflow-hidden relative">
+                <div className="absolute top-3 left-3 z-10 bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm font-semibold">In Progress</div>
+                <img 
+                  src={eifsProject2_1} 
+                  alt="EIFS application with scaffolding"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center mb-2">
+                  <Camera className="h-5 w-5 mr-2 text-accent" />
+                  <h3 className="font-semibold text-lg text-primary">Commercial EIFS Application</h3>
+                </div>
+                <p className="text-muted-foreground">
+                  Base coat being applied to commercial building with protective covering during the EIFS process.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* EIFS Project 2 - Image 2 */}
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '1.9s'}}>
+              <div className="aspect-[4/3] overflow-hidden relative">
+                <div className="absolute top-3 left-3 z-10 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">Completed</div>
+                <img 
+                  src={eifsProject2_2} 
+                  alt="Completed EIFS with stone wainscot"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center mb-2">
+                  <Camera className="h-5 w-5 mr-2 text-accent" />
+                  <h3 className="font-semibold text-lg text-primary">EIFS with Stone Wainscot</h3>
+                </div>
+                <p className="text-muted-foreground">
+                  Elegant covered porch featuring textured EIFS finish with natural stone base.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* EIFS Project 2 - Image 3 */}
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '2s'}}>
+              <div className="aspect-[4/3] overflow-hidden relative">
+                <div className="absolute top-3 left-3 z-10 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">Completed</div>
+                <img 
+                  src={eifsProject2_3} 
+                  alt="Luxury home with EIFS and stone"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center mb-2">
+                  <Camera className="h-5 w-5 mr-2 text-accent" />
+                  <h3 className="font-semibold text-lg text-primary">Luxury Home Exterior</h3>
+                </div>
+                <p className="text-muted-foreground">
+                  Beautiful custom home with EIFS finish, decorative medallion, and stone accents around garage doors.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* EIFS Project 2 - Image 4 */}
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '2.1s'}}>
+              <div className="aspect-[4/3] overflow-hidden relative">
+                <div className="absolute top-3 left-3 z-10 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">Completed</div>
+                <img 
+                  src={eifsProject2_4} 
+                  alt="Commercial building with stone and EIFS"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center mb-2">
+                  <Camera className="h-5 w-5 mr-2 text-accent" />
+                  <h3 className="font-semibold text-lg text-primary">Commercial Stone Facade</h3>
+                </div>
+                <p className="text-muted-foreground">
+                  Professional commercial building featuring rustic stone wainscot with brick and EIFS upper sections.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* EIFS Project 2 - Image 5 */}
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '2.2s'}}>
+              <div className="aspect-[4/3] overflow-hidden relative">
+                <div className="absolute top-3 left-3 z-10 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">Completed</div>
+                <img 
+                  src={eifsProject2_5} 
+                  alt="Commercial building with brick and stone"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center mb-2">
+                  <Camera className="h-5 w-5 mr-2 text-accent" />
+                  <h3 className="font-semibold text-lg text-primary">Brick & Stone Combination</h3>
+                </div>
+                <p className="text-muted-foreground">
+                  Commercial building showcasing brick pillars with natural stone base and EIFS gable.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* EIFS Project 2 - Image 6 */}
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '2.3s'}}>
+              <div className="aspect-[4/3] overflow-hidden relative">
+                <div className="absolute top-3 left-3 z-10 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">Completed</div>
+                <img 
+                  src={eifsProject2_6} 
+                  alt="EIFS with stone and brick"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center mb-2">
+                  <Camera className="h-5 w-5 mr-2 text-accent" />
+                  <h3 className="font-semibold text-lg text-primary">Full Exterior Finish</h3>
+                </div>
+                <p className="text-muted-foreground">
+                  Complete exterior with EIFS gable, decorative brick band, and fieldstone lower section.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* EIFS Project 2 - Image 7 */}
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '2.4s'}}>
+              <div className="aspect-[4/3] overflow-hidden relative">
+                <img 
+                  src={eifsProject2_7} 
+                  alt="Stone detail with EIFS"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center mb-2">
+                  <Camera className="h-5 w-5 mr-2 text-accent" />
+                  <h3 className="font-semibold text-lg text-primary">Stone & EIFS Detail</h3>
+                </div>
+                <p className="text-muted-foreground">
+                  Close-up showing the precision craftsmanship where natural stone meets textured EIFS finish.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* EIFS Project 2 - Image 8 */}
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '2.5s'}}>
+              <div className="aspect-[4/3] overflow-hidden relative">
+                <div className="absolute top-3 left-3 z-10 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">Completed</div>
+                <img 
+                  src={eifsProject2_8} 
+                  alt="EIFS with arched windows and stone"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center mb-2">
+                  <Camera className="h-5 w-5 mr-2 text-accent" />
+                  <h3 className="font-semibold text-lg text-primary">Elegant Arched Windows</h3>
+                </div>
+                <p className="text-muted-foreground">
+                  Custom EIFS finish with decorative keystones above arched windows and natural stone base.
                 </p>
               </CardContent>
             </Card>
