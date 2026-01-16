@@ -18,6 +18,9 @@ import fireplaceStone3 from "@/assets/gallery/fireplace-stone-3.jpeg";
 import fireplaceStone4 from "@/assets/gallery/fireplace-stone-4.jpeg";
 import fireplaceStone5 from "@/assets/gallery/fireplace-stone-5.jpeg";
 import fireplaceStone6 from "@/assets/gallery/fireplace-stone-6.jpeg";
+import eifsStoneLath1 from "@/assets/gallery/eifs-stone-lath-1.jpeg";
+import eifsStoneBase2 from "@/assets/gallery/eifs-stone-base-2.jpeg";
+import eifsStoneComplete3 from "@/assets/gallery/eifs-stone-complete-3.jpeg";
 
 const Index = () => {
   const services = [
@@ -649,6 +652,77 @@ const Index = () => {
                 </div>
                 <p className="text-muted-foreground">
                   Consistent stone pattern wrapping around the entire home for a cohesive, polished finish.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* EIFS Stone Process - Section Header */}
+            <div className="lg:col-span-3 md:col-span-2 col-span-1 animate-fade-in" style={{animationDelay: '1.3s'}}>
+              <div className="bg-gradient-to-r from-accent/10 to-primary/10 rounded-xl p-6 text-center">
+                <h3 className="text-2xl font-bold text-primary mb-2">🔧 EIFS Stone Installation Process</h3>
+                <p className="text-muted-foreground">See our professional EIFS stone application from metal lath to finished stone</p>
+              </div>
+            </div>
+
+            {/* EIFS - Step 1: Metal Lath */}
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '1.4s'}}>
+              <div className="aspect-[4/3] overflow-hidden relative">
+                <div className="absolute top-3 left-3 z-10 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-semibold">Step 1</div>
+                <img 
+                  src={eifsStoneLath1} 
+                  alt="Metal lath installation for EIFS stone"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center mb-2">
+                  <Camera className="h-5 w-5 mr-2 text-accent" />
+                  <h3 className="font-semibold text-lg text-primary">Metal Lath & Scratch Coat</h3>
+                </div>
+                <p className="text-muted-foreground">
+                  Metal lath is secured to the exterior wall, then a scratch coat of mortar is applied to create a strong bond for the stone.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* EIFS - Step 2: Base Coat */}
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '1.5s'}}>
+              <div className="aspect-[4/3] overflow-hidden relative">
+                <div className="absolute top-3 left-3 z-10 bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm font-semibold">Step 2</div>
+                <img 
+                  src={eifsStoneBase2} 
+                  alt="Base coat application for EIFS stone"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center mb-2">
+                  <Camera className="h-5 w-5 mr-2 text-accent" />
+                  <h3 className="font-semibold text-lg text-primary">Brown Coat Application</h3>
+                </div>
+                <p className="text-muted-foreground">
+                  A smooth brown coat is applied over the insulation board, preparing a solid base for the final stone layer.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* EIFS - Step 3: Stone Complete */}
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '1.6s'}}>
+              <div className="aspect-[4/3] overflow-hidden relative">
+                <div className="absolute top-3 left-3 z-10 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">Completed</div>
+                <img 
+                  src={eifsStoneComplete3} 
+                  alt="Completed EIFS stone installation"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center mb-2">
+                  <Camera className="h-5 w-5 mr-2 text-accent" />
+                  <h3 className="font-semibold text-lg text-primary">Finished Stone Exterior</h3>
+                </div>
+                <p className="text-muted-foreground">
+                  Beautiful stacked stone installed on the lower exterior, blending seamlessly with the siding above.
                 </p>
               </CardContent>
             </Card>
