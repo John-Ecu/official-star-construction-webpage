@@ -3,6 +3,10 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Phone, Mail, MapPin, Star, Shield, Users, CheckCircle, Camera } from "lucide-react";
 import insulcreteWork1 from "@/assets/gallery/insulcrete-work-1.jpeg";
+import chimneyStone1a from "@/assets/gallery/chimney-stone-1a.jpeg";
+import chimneyStone1b from "@/assets/gallery/chimney-stone-1b.jpeg";
+import chimneyStone1c from "@/assets/gallery/chimney-stone-1c.jpeg";
+import chimneyStone2 from "@/assets/gallery/chimney-stone-2.jpeg";
 
 const Index = () => {
   const services = [
@@ -325,8 +329,86 @@ const Index = () => {
                 </p>
               </CardContent>
             </Card>
-            
-            {/* More gallery items will be added here */}
+
+            {/* Gallery Item 2 - Chimney 1 View A */}
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.1s'}}>
+              <div className="aspect-[4/3] overflow-hidden">
+                <img 
+                  src={chimneyStone1a} 
+                  alt="Stone chimney installation - side view"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center mb-2">
+                  <Camera className="h-5 w-5 mr-2 text-accent" />
+                  <h3 className="font-semibold text-lg text-primary">Stone Chimney - Side View</h3>
+                </div>
+                <p className="text-muted-foreground">
+                  Elegant stone exterior added to a floor-to-ceiling chimney, creating a stunning focal point in this Wisconsin home.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Gallery Item 3 - Chimney 1 View B */}
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.2s'}}>
+              <div className="aspect-[4/3] overflow-hidden">
+                <img 
+                  src={chimneyStone1b} 
+                  alt="Stone chimney installation - angled view"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center mb-2">
+                  <Camera className="h-5 w-5 mr-2 text-accent" />
+                  <h3 className="font-semibold text-lg text-primary">Stone Chimney - Angled View</h3>
+                </div>
+                <p className="text-muted-foreground">
+                  Another angle showcasing the natural stone finish that extends from floor to vaulted ceiling with exposed beam.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Gallery Item 4 - Chimney 1 View C */}
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.3s'}}>
+              <div className="aspect-[4/3] overflow-hidden">
+                <img 
+                  src={chimneyStone1c} 
+                  alt="Stone chimney installation - front view"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center mb-2">
+                  <Camera className="h-5 w-5 mr-2 text-accent" />
+                  <h3 className="font-semibold text-lg text-primary">Stone Chimney - Front View</h3>
+                </div>
+                <p className="text-muted-foreground">
+                  The completed chimney as seen from the living area—a mesmerizing centerpiece with custom stonework.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Gallery Item 5 - Chimney 2 */}
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.4s'}}>
+              <div className="aspect-[4/3] overflow-hidden">
+                <img 
+                  src={chimneyStone2} 
+                  alt="Modern slate stone chimney"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center mb-2">
+                  <Camera className="h-5 w-5 mr-2 text-accent" />
+                  <h3 className="font-semibold text-lg text-primary">Modern Slate Chimney</h3>
+                </div>
+                <p className="text-muted-foreground">
+                  A sleek, contemporary chimney with dark slate stone installation—adding modern elegance to a new construction home.
+                </p>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
