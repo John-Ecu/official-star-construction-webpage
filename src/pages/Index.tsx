@@ -1076,48 +1076,35 @@ const Index = () => {
               to receive FREE quotes on your next construction project! 🏗️
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {contacts.map((contact, index) => (
               <Card 
                 key={contact.name} 
-                className="bg-white text-foreground hover:shadow-glow transition-all duration-500 hover:scale-105 group animate-slide-up overflow-hidden"
+                className="bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20 transition-all duration-500 hover:scale-105 group animate-slide-up"
                 style={{animationDelay: `${0.1 * index}s`}}
               >
-                <CardHeader className="text-center pb-4 relative">
-                  <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-primary/20 group-hover:border-primary/40 transition-colors bg-black">
-                    <img 
-                      src={contact.photo}
-                      alt={contact.name}
-                      className="w-full h-full object-cover object-center"
-                      style={{
-                        filter: ["Cristian Castro", "Mili Castro", "Thomas Villacres"].includes(contact.name)
-                          ? 'blur(10px) brightness(1.1) contrast(1.1)' 
-                          : 'brightness(1.1) contrast(1.1)',
-                        backgroundColor: '#000000'
-                      }}
-                    />
-                  </div>
-                  <CardTitle className="text-xl group-hover:text-primary transition-colors">{contact.name}</CardTitle>
-                  <CardDescription className="text-primary font-bold text-base">
+                <CardHeader className="text-center pb-2">
+                  <CardTitle className="text-lg text-white group-hover:text-accent transition-colors">{contact.name}</CardTitle>
+                  <CardDescription className="text-white/80 font-medium text-sm">
                     {contact.role}
                   </CardDescription>
                 </CardHeader>
-                <CardContent className="space-y-4">
+                <CardContent className="space-y-3 pt-2">
                   {contact.name === "John Castro" && (
-                    <div className="flex items-center group-hover:text-primary transition-colors">
-                      <Phone className="h-5 w-5 mr-3 text-accent group-hover:text-primary transition-colors" />
+                    <div className="flex items-center justify-center">
+                      <Phone className="h-4 w-4 mr-2 text-accent" />
                       <a 
                         href={`tel:${contact.phone}`} 
-                        className="text-base hover:underline font-medium"
+                        className="text-sm hover:underline font-medium text-white"
                       >
                         {contact.phone}
                       </a>
                     </div>
                   )}
                   {contact.email && (
-                    <div className="flex items-start group-hover:text-primary transition-colors">
-                      <Mail className="h-5 w-5 mr-3 mt-0.5 text-accent group-hover:text-primary transition-colors flex-shrink-0" />
-                      <a href={`mailto:${contact.email}`} className="text-sm font-medium hover:underline break-all tracking-wide">
+                    <div className="flex items-center justify-center">
+                      <Mail className="h-4 w-4 mr-2 text-accent flex-shrink-0" />
+                      <a href={`mailto:${contact.email}`} className="text-xs font-medium hover:underline text-white/90 break-all">
                         {contact.email}
                       </a>
                     </div>
