@@ -76,19 +76,19 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       {/* Navigation */}
       <nav className="sticky top-0 z-50 bg-primary/95 backdrop-blur-sm border-b border-white/10">
-        <div className="container mx-auto px-4 py-3 flex items-center justify-between">
+        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <img 
               src={starLogo} 
               alt="Star Construction" 
-              className="h-10 w-auto"
+              className="h-16 w-auto"
             />
           </div>
           <a 
             href={`tel:${mainPhone}`}
-            className="flex items-center gap-2 bg-accent text-accent-foreground px-4 py-2 rounded font-semibold text-sm hover:bg-accent/90 transition-colors"
+            className="flex items-center gap-2 bg-accent text-accent-foreground px-5 py-3 rounded font-bold hover:bg-accent/90 transition-colors"
           >
-            <Phone className="h-4 w-4" />
+            <Phone className="h-5 w-5" />
             <span className="hidden sm:inline">{mainPhone}</span>
             <span className="sm:hidden">Call Now</span>
           </a>
