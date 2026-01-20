@@ -77,12 +77,15 @@ const Index = () => {
       {/* Navigation */}
       <nav className="sticky top-0 z-50 bg-primary/95 backdrop-blur-sm border-b border-white/10">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-4">
             <img 
               src={starLogo} 
               alt="Star Construction" 
-              className="h-20 w-auto"
+              className="h-14 w-auto"
             />
+            <span className="text-white font-bold text-xl tracking-wide hidden sm:block">
+              STAR CONSTRUCTION
+            </span>
           </div>
           <a 
             href={`tel:${mainPhone}`}
