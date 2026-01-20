@@ -182,19 +182,10 @@ const Index = () => {
             <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               Licensed & Insured
             </h2>
-            <p className="text-muted-foreground text-lg leading-relaxed mb-8">
+            <p className="text-muted-foreground text-lg leading-relaxed">
               Star Construction LLC is fully licensed and insured in Wisconsin. 
               We're covered as a business to protect you and your property on every project.
             </p>
-            <a 
-              href="https://license.wi.gov/s/license-lookup" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg"
-            >
-              <Shield className="h-5 w-5 mr-2" />
-              Verify Our Licenses
-            </a>
           </div>
         </div>
       </section>
