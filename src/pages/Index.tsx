@@ -4,15 +4,11 @@ import { Badge } from "@/components/ui/badge";
 import { Phone, Mail, MapPin, Star, Shield, Users, CheckCircle, Camera } from "lucide-react";
 import insulcreteWork1 from "@/assets/gallery/insulcrete-work-1.jpeg";
 import chimneyStone1a from "@/assets/gallery/chimney-stone-1a.jpeg";
-import chimneyStone1b from "@/assets/gallery/chimney-stone-1b.jpeg";
 import chimneyStone1c from "@/assets/gallery/chimney-stone-1c.jpeg";
 import chimneyStone2 from "@/assets/gallery/chimney-stone-2.jpeg";
 import summer2024Before from "@/assets/gallery/summer2024-stone-before.jpeg";
 import summer2024Stone1 from "@/assets/gallery/summer2024-stone-1.jpeg";
 import summer2024Stone2 from "@/assets/gallery/summer2024-stone-2.jpeg";
-import summer2024Stone3 from "@/assets/gallery/summer2024-stone-3.jpeg";
-import summer2024Stone4 from "@/assets/gallery/summer2024-stone-4.jpeg";
-import summer2024Stone5 from "@/assets/gallery/summer2024-stone-5.jpeg";
 import summer2024Stone6 from "@/assets/gallery/summer2024-stone-6.jpeg";
 import fireplaceStone3 from "@/assets/gallery/fireplace-stone-3.jpeg";
 import fireplaceStone4 from "@/assets/gallery/fireplace-stone-4.jpeg";
@@ -71,12 +67,9 @@ const Index = () => {
     }
   ];
 
-  const contacts = [
-    { name: "John Castro", role: "Account Executive", phone: "608-358-3706", email: "john.castroflores2000@gmail.com", photo: "/lovable-uploads/f2647afe-985c-4486-8b27-8c6dd9a58cbe.png" },
-    { name: "Mili Castro", role: "Accountant & Manager", phone: "608-698-7669", email: "castromary1220@yahoo.com", photo: "/lovable-uploads/0434e918-a574-4f1c-bfe1-25221834808c.png" },
-    { name: "Thomas Villacres", role: "Supervisor", phone: "608-333-8120", email: "", photo: "/lovable-uploads/abf58258-b1a0-45bb-a9ce-57ed134d6e31.png" },
-    { name: "Cristian Castro", role: "Company Owner", phone: "608-635-6033", email: "bluestarcontruction1994@gmail.com", photo: "/lovable-uploads/fd1bdbd5-481a-4c8d-8344-c9650c6f34b6.png" }
-  ];
+  // Main contact info
+  const mainPhone = "608-358-3706";
+  const mainEmail = "bluestarcontruction1994@gmail.com";
 
   return (
     <div className="min-h-screen bg-background">
@@ -182,46 +175,26 @@ const Index = () => {
       {/* Licensed & Insured Section */}
       <section className="py-16 bg-gradient-to-br from-primary/5 to-secondary/5">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12 animate-fade-in">
-            <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              🛡️ Licensed & Insured
+          <div className="max-w-3xl mx-auto text-center animate-fade-in">
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-6">
+              <Shield className="h-8 w-8 text-primary" />
+            </div>
+            <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+              Licensed & Insured
             </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto text-lg leading-relaxed">
+            <p className="text-muted-foreground text-lg leading-relaxed mb-8">
               Star Construction LLC is fully licensed and insured in Wisconsin. 
-              Verify our active licenses through the Wisconsin Department of Safety and Professional Services.
+              We're covered as a business to protect you and your property on every project.
             </p>
-          </div>
-          <div className="max-w-4xl mx-auto">
-            <Card className="bg-gradient-card shadow-soft border-0 animate-slide-up">
-              <CardContent className="p-8">
-                <div className="flex justify-center">
-                  <div className="text-center">
-                    <h3 className="text-xl font-semibold mb-4 text-primary">Cristian (Owner)</h3>
-                    <div className="space-y-3">
-                      <div className="bg-background/50 p-4 rounded-lg">
-                        <p className="text-sm text-muted-foreground mb-1">Dwelling Contractor Qualifier</p>
-                        <p className="font-mono text-lg font-semibold">3397 - DCQ</p>
-                      </div>
-                      <div className="bg-background/50 p-4 rounded-lg">
-                        <p className="text-sm text-muted-foreground mb-1">Dwelling Contractor License</p>
-                        <p className="font-mono text-lg font-semibold">3033 - DCFR</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="text-center mt-8">
-                  <a 
-                    href="https://license.wi.gov/s/license-lookup" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center bg-primary text-primary-foreground hover:bg-primary/90 px-6 py-3 rounded-lg font-semibold transition-colors"
-                  >
-                    <Shield className="h-5 w-5 mr-2" />
-                    Verify Our Licenses on DSPS Website
-                  </a>
-                </div>
-              </CardContent>
-            </Card>
+            <a 
+              href="https://license.wi.gov/s/license-lookup" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg"
+            >
+              <Shield className="h-5 w-5 mr-2" />
+              Verify Our Licenses
+            </a>
           </div>
         </div>
       </section>
@@ -1069,49 +1042,33 @@ const Index = () => {
           <div className="w-full h-full bg-gradient-to-br from-white/5 to-transparent"></div>
         </div>
         <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl font-bold mb-6">📞 Let's Build Something Beautiful Together</h2>
-            <p className="text-xl opacity-90 max-w-3xl mx-auto">
-              Ready to start your project? Contact our Wisconsin team for any job opportunities and 
-              to receive FREE quotes on your next construction project! 🏗️
+          <div className="max-w-3xl mx-auto text-center animate-fade-in">
+            <h2 className="text-5xl font-bold mb-6">Get a Free Quote</h2>
+            <p className="text-xl opacity-90 mb-12">
+              Ready to start your project? Contact us today for a free estimate on your next construction project.
             </p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {contacts.map((contact, index) => (
-              <Card 
-                key={contact.name} 
-                className="bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20 transition-all duration-500 hover:scale-105 group animate-slide-up"
-                style={{animationDelay: `${0.1 * index}s`}}
+            
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-12">
+              <a 
+                href={`tel:${mainPhone}`}
+                className="flex items-center gap-3 bg-white text-primary px-8 py-4 rounded-lg font-bold text-xl hover:bg-white/90 transition-all duration-300 hover:scale-105 shadow-lg"
               >
-                <CardHeader className="text-center pb-2">
-                  <CardTitle className="text-lg text-white group-hover:text-accent transition-colors">{contact.name}</CardTitle>
-                  <CardDescription className="text-white/80 font-medium text-sm">
-                    {contact.role}
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-3 pt-2">
-                  {contact.name === "John Castro" && (
-                    <div className="flex items-center justify-center">
-                      <Phone className="h-4 w-4 mr-2 text-accent" />
-                      <a 
-                        href={`tel:${contact.phone}`} 
-                        className="text-sm hover:underline font-medium text-white"
-                      >
-                        {contact.phone}
-                      </a>
-                    </div>
-                  )}
-                  {contact.email && (
-                    <div className="flex items-center justify-center">
-                      <Mail className="h-4 w-4 mr-2 text-accent flex-shrink-0" />
-                      <a href={`mailto:${contact.email}`} className="text-xs font-medium hover:underline text-white/90 break-all">
-                        {contact.email}
-                      </a>
-                    </div>
-                  )}
-                </CardContent>
-              </Card>
-            ))}
+                <Phone className="h-6 w-6" />
+                {mainPhone}
+              </a>
+              <a 
+                href={`mailto:${mainEmail}`}
+                className="flex items-center gap-3 bg-white/10 backdrop-blur-sm border border-white/30 text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/20 transition-all duration-300 hover:scale-105"
+              >
+                <Mail className="h-6 w-6" />
+                Email Us
+              </a>
+            </div>
+
+            <div className="flex items-center justify-center gap-2 text-white/80">
+              <MapPin className="h-5 w-5" />
+              <span className="text-lg">Serving Dane County, Wisconsin</span>
+            </div>
           </div>
         </div>
       </section>
