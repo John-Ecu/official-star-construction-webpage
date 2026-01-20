@@ -81,7 +81,7 @@ const Index = () => {
             <img 
               src={starLogo} 
               alt="Star Construction" 
-              className="h-16 w-auto"
+              className="h-20 w-auto"
             />
           </div>
           <a 
@@ -483,7 +483,6 @@ const Index = () => {
             {/* Summer 2024 - Before */}
             <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.6s'}}>
               <div className="aspect-[4/3] overflow-hidden relative">
-                <div className="absolute top-3 left-3 z-10 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-semibold">Before</div>
                 <img 
                   src={summer2024Before} 
                   alt="Before stone installation"
@@ -493,10 +492,10 @@ const Index = () => {
               <CardContent className="p-6">
                 <div className="flex items-center mb-2">
                   <Camera className="h-5 w-5 mr-2 text-accent" />
-                  <h3 className="font-semibold text-lg text-primary">Before Installation</h3>
+                  <h3 className="font-semibold text-lg text-primary">Pre-Installation</h3>
                 </div>
                 <p className="text-muted-foreground">
-                  The home before exterior stone work—prepared with proper sheathing and weather barriers.
+                  The home prepared with proper sheathing and weather barriers.
                 </p>
               </CardContent>
             </Card>
