@@ -1,7 +1,8 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Phone, Mail, MapPin, Star, Shield, Users, CheckCircle, Camera } from "lucide-react";
+import { Phone, Mail, MapPin, Shield, Users, CheckCircle, Camera } from "lucide-react";
+import starLogo from "@/assets/star-construction-logo.png";
 import insulcreteWork1 from "@/assets/gallery/insulcrete-work-1.jpeg";
 import chimneyStone1a from "@/assets/gallery/chimney-stone-1a.jpeg";
 import chimneyStone1c from "@/assets/gallery/chimney-stone-1c.jpeg";
@@ -74,27 +75,28 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="bg-gradient-hero text-primary-foreground py-24 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
-          <div className="w-full h-full bg-gradient-to-br from-white/5 to-transparent"></div>
+      <section className="bg-gradient-hero text-primary-foreground py-20 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <div className="w-full h-full bg-gradient-to-br from-accent/20 to-transparent"></div>
         </div>
         <div className="container mx-auto px-4 text-center relative z-10">
-          <div className="flex items-center justify-center mb-8 animate-fade-in">
-            <Star className="h-16 w-16 mr-4 animate-glow" />
-            <h1 className="text-6xl font-bold bg-gradient-to-r from-white to-gray-200 bg-clip-text text-transparent">
-              STAR CONSTRUCTION LLC
-            </h1>
+          <div className="flex flex-col items-center justify-center mb-8 animate-fade-in">
+            <img 
+              src={starLogo} 
+              alt="Star Construction LLC" 
+              className="h-48 w-auto mb-6"
+            />
           </div>
           <p className="text-xl mb-8 max-w-3xl mx-auto opacity-90 animate-slide-up">
-            🌲 Specializing in EIFS, Stone, Insulcrete, Caulking, and Construction Cleaning services 
-            throughout beautiful Dane County, Wisconsin 🏔️
+            Specializing in EIFS, Stone, Insulcrete, Caulking, and Construction Cleaning services 
+            throughout Dane County, Wisconsin
           </p>
-          <div className="flex flex-wrap justify-center gap-4 mb-10 animate-fade-in" style={{animationDelay: '0.3s'}}>
+          <div className="flex flex-wrap justify-center gap-3 mb-10 animate-fade-in" style={{animationDelay: '0.3s'}}>
             {services.map((service, index) => (
               <Badge 
                 key={service.name} 
                 variant="secondary" 
-                className="text-lg py-3 px-6 bg-white/20 text-white border-white/30 hover:bg-white/30 transition-all duration-300 hover:scale-105"
+                className="text-base py-2 px-5 bg-white/10 text-white border-white/20 hover:bg-white/20 transition-all duration-300"
                 style={{animationDelay: `${0.1 * index}s`}}
               >
                 {service.name}
@@ -102,8 +104,8 @@ const Index = () => {
             ))}
           </div>
           <div className="animate-slide-up" style={{animationDelay: '0.6s'}}>
-            <Button size="lg" className="text-lg px-10 py-4 bg-accent text-accent-foreground hover:bg-accent/90 shadow-glow hover:shadow-xl transition-all duration-300 hover:scale-105">
-              🎯 Get Free Quote Today
+            <Button size="lg" className="text-lg px-10 py-4 bg-accent text-accent-foreground hover:bg-accent/90 shadow-glow hover:shadow-xl transition-all duration-300 hover:scale-105 font-bold">
+              Get Free Quote
             </Button>
           </div>
         </div>
@@ -1002,7 +1004,7 @@ const Index = () => {
               >
                 <CardHeader className="pb-6">
                   <CardTitle className="text-primary text-xl group-hover:text-accent transition-colors flex items-center">
-                    <Star className="h-5 w-5 mr-2 animate-float" />
+                    <CheckCircle className="h-5 w-5 mr-2 text-accent" />
                     {ref.company}
                   </CardTitle>
                   <CardDescription className="flex items-start text-base">
@@ -1065,16 +1067,17 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gradient-to-r from-muted to-accent/10 py-12">
+      <footer className="bg-primary py-12">
         <div className="container mx-auto px-4 text-center">
           <div className="flex items-center justify-center mb-6 animate-fade-in">
-            <Star className="h-8 w-8 mr-3 text-primary animate-glow" />
-            <span className="font-bold text-2xl bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Star Construction LLC
-            </span>
+            <img 
+              src={starLogo} 
+              alt="Star Construction LLC" 
+              className="h-20 w-auto"
+            />
           </div>
-          <p className="text-muted-foreground text-lg mb-2">🏔️ Proudly Serving Beautiful Dane County, Wisconsin 🌲</p>
-          <p className="text-sm text-muted-foreground">Professional Construction Services Since 2000s</p>
+          <p className="text-primary-foreground/80 text-lg mb-2">Proudly Serving Dane County, Wisconsin</p>
+          <p className="text-sm text-primary-foreground/60">Professional Construction Services Since 2000s</p>
         </div>
       </footer>
     </div>
