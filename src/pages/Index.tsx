@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Phone, Mail, MapPin, Shield, Users, CheckCircle, Camera } from "lucide-react";
+import { Phone, Mail, MapPin, Shield, Users, CheckCircle, Camera, Layers } from "lucide-react";
 import starLogo from "@/assets/star-construction-logo.png";
 import insulcreteWork1 from "@/assets/gallery/insulcrete-work-1.jpeg";
 import chimneyStone1a from "@/assets/gallery/chimney-stone-1a.jpeg";
@@ -245,69 +245,101 @@ const Index = () => {
         </div>
       </section>
 
-      {/* EIFS vs Stucco Comparison */}
-      <section className="py-20 bg-gradient-to-br from-accent/5 to-primary/5">
+      {/* Our Exterior Finish Services */}
+      <section className="py-24 bg-gradient-to-br from-accent/5 to-primary/5">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              🏗️ We Specialize in EIFS, Not Stucco
+              Exterior Finish Systems
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              <strong>Important:</strong> Star Construction specializes exclusively in EIFS (Exterior Insulation and Finish System), 
-              not traditional stucco. Here's a comparison so you can understand the difference and why we chose EIFS.
+              We offer both EIFS and Traditional Stucco applications. Each system has unique benefits—let us help you choose the right solution for your project.
             </p>
           </div>
-          <div className="max-w-6xl mx-auto">
-            <Card className="bg-gradient-card shadow-soft border-0 animate-slide-up">
-              <CardContent className="p-0">
-                <div className="overflow-x-auto">
-                  <table className="w-full">
-                    <thead>
-                      <tr className="border-b bg-gradient-to-r from-primary/10 to-accent/10">
-                        <th className="text-left p-6 font-bold text-lg text-primary">Factor</th>
-                        <th className="text-left p-6 font-bold text-lg text-primary">EIFS ⭐</th>
-                        <th className="text-left p-6 font-bold text-lg text-primary">Traditional Stucco</th>
-                      </tr>
-                    </thead>
-                    <tbody className="text-base">
-                      <tr className="border-b hover:bg-accent/5 transition-colors">
-                        <td className="p-6 font-semibold text-accent">🎨 Appearance</td>
-                        <td className="p-6">More color options and smoother texture</td>
-                        <td className="p-6">Fewer color options and rougher texture</td>
-                      </tr>
-                      <tr className="border-b hover:bg-accent/5 transition-colors">
-                        <td className="p-6 font-semibold text-accent">💰 Cost</td>
-                        <td className="p-6">$8 – $14 per sq. ft., fully installed</td>
-                        <td className="p-6">$7 – $9 per sq. ft., fully installed</td>
-                      </tr>
-                      <tr className="border-b hover:bg-accent/5 transition-colors">
-                        <td className="p-6 font-semibold text-accent">🔧 Upkeep</td>
-                        <td className="p-6">No major maintenance requirements other than regular cleaning</td>
-                        <td className="p-6">More maintenance requirements including patching, caulking, and repainting</td>
-                      </tr>
-                      <tr className="border-b hover:bg-accent/5 transition-colors">
-                        <td className="p-6 font-semibold text-accent">🛡️ Durability</td>
-                        <td className="p-6">Resistant to cracking, but can trap moisture behind the finish</td>
-                        <td className="p-6">Prone to cracking but more "breathable" (allows in and out movement of moisture)</td>
-                      </tr>
-                      <tr className="border-b hover:bg-accent/5 transition-colors">
-                        <td className="p-6 font-semibold text-accent">🏗️ Installation</td>
-                        <td className="p-6">Needs installation by a professional</td>
-                        <td className="p-6">Possible to install DIY</td>
-                      </tr>
-                      <tr className="border-b hover:bg-accent/5 transition-colors">
-                        <td className="p-6 font-semibold text-accent">🌱 Environmental Impact</td>
-                        <td className="p-6">Petroleum-based and therefore not renewable</td>
-                        <td className="p-6">Manufacture of Portland cement is energy intensive and releases high amounts of CO2</td>
-                      </tr>
-                      <tr className="hover:bg-accent/5 transition-colors">
-                        <td className="p-6 font-semibold text-accent">📈 Resale Value</td>
-                        <td className="p-6">About 70% return on investment (ROI)</td>
-                        <td className="p-6">About 70% ROI (same as EIFS)</td>
-                      </tr>
-                    </tbody>
-                  </table>
+          
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-16">
+            {/* EIFS Card */}
+            <Card className="bg-gradient-card shadow-soft border-0 animate-slide-up overflow-hidden group hover:shadow-lg transition-all duration-300">
+              <CardContent className="p-8">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center">
+                    <Shield className="w-6 h-6 text-accent" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-primary">EIFS</h3>
                 </div>
+                <p className="text-muted-foreground mb-6 leading-relaxed">
+                  <strong>Exterior Insulation and Finish System</strong> — A multi-layered exterior wall system that provides superior insulation and a seamless, modern finish. EIFS offers excellent energy efficiency, a wide range of colors and textures, and requires minimal maintenance.
+                </p>
+                <ul className="space-y-3 text-sm text-muted-foreground">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-accent mt-0.5 flex-shrink-0" />
+                    <span>Superior thermal insulation</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-accent mt-0.5 flex-shrink-0" />
+                    <span>More color & texture options</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-accent mt-0.5 flex-shrink-0" />
+                    <span>Crack-resistant finish</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-accent mt-0.5 flex-shrink-0" />
+                    <span>Low maintenance requirements</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            {/* Traditional Stucco Card */}
+            <Card className="bg-gradient-card shadow-soft border-0 animate-slide-up overflow-hidden group hover:shadow-lg transition-all duration-300" style={{animationDelay: '0.1s'}}>
+              <CardContent className="p-8">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                    <Layers className="w-6 h-6 text-primary" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-primary">Traditional Stucco</h3>
+                </div>
+                <p className="text-muted-foreground mb-6 leading-relaxed">
+                  <strong>Portland Cement Plaster</strong> — A time-tested exterior finish made from cement, sand, and water. Traditional stucco provides a classic textured appearance, excellent breathability, and proven durability that has been trusted for centuries.
+                </p>
+                <ul className="space-y-3 text-sm text-muted-foreground">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-accent mt-0.5 flex-shrink-0" />
+                    <span>Classic, timeless aesthetic</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-accent mt-0.5 flex-shrink-0" />
+                    <span>Excellent moisture breathability</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-accent mt-0.5 flex-shrink-0" />
+                    <span>Fire-resistant material</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-accent mt-0.5 flex-shrink-0" />
+                    <span>Proven longevity</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Pricing CTA */}
+          <div className="text-center animate-fade-in" style={{animationDelay: '0.2s'}}>
+            <Card className="bg-primary/5 border-accent/20 max-w-2xl mx-auto">
+              <CardContent className="py-10 px-8">
+                <h3 className="text-2xl font-bold text-primary mb-3">Every Project Is Unique</h3>
+                <p className="text-muted-foreground mb-6">
+                  Pricing depends on project scope, materials, and site conditions. Reach out for a personalized consultation and free estimate.
+                </p>
+                <a 
+                  href={`tel:${mainPhone}`}
+                  className="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-primary font-semibold px-8 py-3 rounded-full transition-all duration-300 hover:scale-105"
+                >
+                  <Phone className="w-5 h-5" />
+                  Request a Quote
+                </a>
               </CardContent>
             </Card>
           </div>
