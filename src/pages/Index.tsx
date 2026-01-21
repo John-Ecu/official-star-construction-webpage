@@ -55,17 +55,17 @@ const Index = () => {
       {/* Navigation */}
       <nav className="sticky top-0 z-50 bg-primary/95 backdrop-blur-sm border-b border-white/10">
         <div className="container mx-auto px-4 py-5 flex items-center justify-between">
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-5">
             <img 
               src={starLogo} 
               alt="Star Construction" 
-              className="h-16 w-auto brightness-110 contrast-110"
+              className="h-20 w-auto brightness-110 contrast-110"
             />
             <div className="flex flex-col">
-              <span className="text-white font-extrabold text-3xl tracking-tight leading-none">
+              <span className="text-white font-extrabold text-4xl tracking-tight leading-none">
                 STAR
               </span>
-              <span className="text-accent font-bold text-base tracking-widest leading-tight">
+              <span className="text-accent font-bold text-lg tracking-widest leading-tight">
                 CONSTRUCTION
               </span>
             </div>
@@ -88,7 +88,7 @@ const Index = () => {
         </div>
         <div className="container mx-auto px-4 text-center relative z-10">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in tracking-tight">
-            EIFS & STONE FOR PEOPLE WHO
+            EIFS & STUCCO FOR THOSE WHO
             <br />
             <span className="text-accent">EXPECT MORE</span>
           </h1>
