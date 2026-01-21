@@ -54,18 +54,18 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       {/* Navigation */}
       <nav className="sticky top-0 z-50 bg-primary/95 backdrop-blur-sm border-b border-white/10">
-        <div className="container mx-auto px-4 py-5 flex items-center justify-between">
-          <div className="flex items-center gap-5">
+        <div className="container mx-auto px-4 py-6 flex items-center justify-between">
+          <div className="flex items-center gap-6">
             <img 
               src={starLogo} 
               alt="Star Construction" 
-              className="h-20 w-auto brightness-110 contrast-110"
+              className="h-24 w-auto brightness-110 contrast-110"
             />
             <div className="flex flex-col">
-              <span className="text-white font-extrabold text-4xl tracking-tight leading-none">
+              <span className="text-white font-black text-5xl tracking-tight leading-none">
                 STAR
               </span>
-              <span className="text-accent font-bold text-lg tracking-widest leading-tight">
+              <span className="text-accent font-bold text-xl tracking-widest leading-tight">
                 CONSTRUCTION
               </span>
             </div>
