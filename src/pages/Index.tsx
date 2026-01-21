@@ -38,12 +38,20 @@ import commercial9 from "@/assets/gallery/commercial-9.jpeg";
 
 const Index = () => {
   const services = [
-    { name: "EIFS", description: "Exterior Insulation and Finish System (EIFS)" },
-    { name: "Stone Installation", description: "Professional stone work for residential and commercial" },
-    { name: "Insulcrete", description: "Insulated concrete installation and finishing" },
-    { name: "Caulking", description: "Sealing for windows, doors, and joints" },
-    { name: "Construction Cleaning", description: "Post-construction cleanup services" }
+    { name: "EIFS", description: "Exterior Insulation and Finish System (EIFS)", scrollTo: "gallery-eifs" },
+    { name: "Stone Installation", description: "Professional stone work for residential and commercial", scrollTo: "gallery-stone" },
+    { name: "Insulcrete", description: "Insulated concrete installation and finishing", scrollTo: "gallery-insulcrete" },
+    { name: "Caulking", description: "Sealing for windows, doors, and joints", scrollTo: null },
+    { name: "Construction Cleaning", description: "Post-construction cleanup services", scrollTo: null }
   ];
+
+  const scrollToSection = (id: string | null) => {
+    if (!id) return;
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
 
 
   // Main contact info
@@ -96,13 +104,19 @@ const Index = () => {
             Trusted by builders, loved by homeowners throughout Dane County, Wisconsin
           </p>
           <div className="flex flex-wrap justify-center gap-3 mb-10 animate-fade-in" style={{animationDelay: '0.3s'}}>
-            {services.map((service, index) => (
-              <span 
-                key={service.name} 
-                className="text-sm py-2 px-4 bg-white/10 text-white/90 border border-white/20 rounded"
+            {services.map((service) => (
+              <button 
+                key={service.name}
+                onClick={() => scrollToSection(service.scrollTo)}
+                disabled={!service.scrollTo}
+                className={`text-sm py-2 px-4 rounded transition-all duration-300 ${
+                  service.scrollTo 
+                    ? 'bg-white/10 text-white border border-white/20 hover:bg-accent hover:text-primary hover:border-accent cursor-pointer hover:scale-105' 
+                    : 'bg-white/5 text-white/50 border border-white/10 cursor-default'
+                }`}
               >
                 {service.name}
-              </span>
+              </button>
             ))}
           </div>
           <div className="animate-slide-up" style={{animationDelay: '0.6s'}}>
@@ -341,8 +355,8 @@ const Index = () => {
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {/* Gallery Item 1 */}
-            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up">
+            {/* Gallery Item 1 - Insulcrete */}
+            <Card id="gallery-insulcrete" className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up scroll-mt-24">
               <div className="aspect-[4/3] overflow-hidden">
                 <img 
                   src={insulcreteWork1} 
@@ -491,7 +505,7 @@ const Index = () => {
             </Card>
 
             {/* Summer 2024 Exterior Stone Project - Section Header */}
-            <div className="lg:col-span-3 md:col-span-2 col-span-1 animate-fade-in" style={{animationDelay: '0.6s'}}>
+            <div id="gallery-stone" className="lg:col-span-3 md:col-span-2 col-span-1 animate-fade-in scroll-mt-24" style={{animationDelay: '0.6s'}}>
               <div className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-xl p-6 text-center">
                 <h3 className="text-2xl font-bold text-primary mb-2">🏠 Summer 2024 Residential Stone Installation</h3>
                 <p className="text-muted-foreground">Complete exterior stone transformation for a new construction home in Dane County</p>
@@ -579,7 +593,7 @@ const Index = () => {
             </Card>
 
             {/* EIFS Stone Process - Section Header */}
-            <div className="lg:col-span-3 md:col-span-2 col-span-1 animate-fade-in" style={{animationDelay: '1.3s'}}>
+            <div id="gallery-eifs" className="lg:col-span-3 md:col-span-2 col-span-1 animate-fade-in scroll-mt-24" style={{animationDelay: '1.3s'}}>
               <div className="bg-gradient-to-r from-accent/10 to-primary/10 rounded-xl p-6 text-center">
                 <h3 className="text-2xl font-bold text-primary mb-2">🔧 EIFS Stone Installation Process</h3>
                 <p className="text-muted-foreground">See our professional EIFS stone application from metal lath to finished stone</p>
