@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
+
 import { Phone, Mail, MapPin, Shield, Users, CheckCircle, Camera, Layers } from "lucide-react";
 import starLogo from "@/assets/star-construction-logo.png";
 import insulcreteWork1 from "@/assets/gallery/insulcrete-work-1.jpeg";
