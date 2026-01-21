@@ -45,28 +45,6 @@ const Index = () => {
     { name: "Construction Cleaning", description: "Post-construction cleanup services" }
   ];
 
-  const references = [
-    {
-      company: "Zander Solution",
-      address: "5909 Sharpsburg Dr Madison, WI 53718",
-      work: ["Stone Installation: Bottom half of tall building", "Caulking Installation: Around windows, doors, joints", "Insulcrete Installation: Around the house"]
-    },
-    {
-      company: "Stucco America",
-      address: "3582 Welcome Dr Verona, WI 53593",
-      work: ["EIFS Installation: Around the house", "Caulking Installation: Doors, windows, etc."]
-    },
-    {
-      company: "Artisan Builder",
-      address: "2717, 2742, 2763, AND 2784 Bomani Dr Sun Prairie, WI 53590",
-      work: ["Stone Installation: Around the house", "Caulking Installation: Doors, windows, etc.", "Insulcrete Installation: Around the house"]
-    },
-    {
-      company: "Smith Management",
-      address: "20 N Blair St #105 Madison, WI 53703",
-      work: ["EIFS Installation: Front of building, garage area, garden area in back"]
-    }
-  ];
 
   // Main contact info
   const mainPhone = "608-635-6033";
@@ -77,15 +55,20 @@ const Index = () => {
       {/* Navigation */}
       <nav className="sticky top-0 z-50 bg-primary/95 backdrop-blur-sm border-b border-white/10">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3">
             <img 
               src={starLogo} 
               alt="Star Construction" 
-              className="h-14 w-auto"
+              className="h-12 w-auto brightness-110 contrast-110"
             />
-            <span className="text-white font-bold text-xl tracking-wide hidden sm:block">
-              STAR CONSTRUCTION
-            </span>
+            <div className="flex flex-col">
+              <span className="text-white font-extrabold text-2xl tracking-tight leading-none">
+                STAR
+              </span>
+              <span className="text-accent font-bold text-sm tracking-widest leading-none">
+                CONSTRUCTION
+              </span>
+            </div>
           </div>
           <a 
             href={`tel:${mainPhone}`}
@@ -1032,49 +1015,31 @@ const Index = () => {
         </div>
       </section>
 
-      {/* References Section */}
+      {/* Trusted Partners Section */}
       <section className="py-20 bg-gradient-to-b from-background to-secondary/5">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              🏆 Our Proud Wisconsin Projects
+          <div className="max-w-3xl mx-auto text-center animate-fade-in">
+            <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+              Trusted by Madison's Best
             </h2>
-            <p className="text-muted-foreground max-w-4xl mx-auto text-lg leading-relaxed">
-              Here are companies we have worked with and a brief description of the work done. 
-              These are just some projects - we have done a lot more throughout Dane County, so feel free to reach out 
-              to them and ask about their experience with our Wisconsin craftsmanship!
+            <p className="text-muted-foreground text-lg leading-relaxed mb-8">
+              We've partnered with builders, property managers, and homeowners throughout the Madison area on projects of all sizes. Our work speaks for itself.
             </p>
-          </div>
-          <div className="grid md:grid-cols-2 gap-8">
-            {references.map((ref, index) => (
-              <Card 
-                key={ref.company} 
-                className="bg-gradient-card hover:shadow-glow transition-all duration-500 hover:scale-105 group border-0 animate-slide-up"
-                style={{animationDelay: `${0.1 * index}s`}}
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <div className="flex items-center gap-2 text-accent">
+                <Users className="w-5 h-5" />
+                <span className="font-semibold">References available upon request</span>
+              </div>
+            </div>
+            <div className="mt-10">
+              <a 
+                href={`tel:${mainPhone}`}
+                className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-4 rounded-full transition-all duration-300 hover:scale-105"
               >
-                <CardHeader className="pb-6">
-                  <CardTitle className="text-primary text-xl group-hover:text-accent transition-colors flex items-center">
-                    <CheckCircle className="h-5 w-5 mr-2 text-accent" />
-                    {ref.company}
-                  </CardTitle>
-                  <CardDescription className="flex items-start text-base">
-                    <MapPin className="h-5 w-5 mr-3 mt-0.5 flex-shrink-0 text-accent" />
-                    {ref.address}
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <h4 className="font-semibold mb-4 text-lg text-primary">✅ Work Completed:</h4>
-                  <ul className="space-y-3">
-                    {ref.work.map((item, itemIndex) => (
-                      <li key={itemIndex} className="text-muted-foreground flex items-start group-hover:text-foreground transition-colors">
-                        <CheckCircle className="h-4 w-4 mr-3 mt-1 text-accent flex-shrink-0" />
-                        <span className="text-base">{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
-              </Card>
-            ))}
+                <Phone className="w-5 h-5" />
+                Get in Touch
+              </a>
+            </div>
           </div>
         </div>
       </section>
