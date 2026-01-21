@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Phone, Mail, MapPin, Shield, Users, CheckCircle, Camera, Layers } from "lucide-react";
 import starLogo from "@/assets/star-construction-logo.png";
 import insulcreteWork1 from "@/assets/gallery/insulcrete-work-1.jpeg";
+import caulkingWork1 from "@/assets/gallery/caulking-work-1.jpeg";
 import chimneyStone1a from "@/assets/gallery/chimney-stone-1a.jpeg";
 import chimneyStone1c from "@/assets/gallery/chimney-stone-1c.jpeg";
 import chimneyStone2 from "@/assets/gallery/chimney-stone-2.jpeg";
@@ -41,8 +42,7 @@ const Index = () => {
     { name: "EIFS", description: "Exterior Insulation and Finish System (EIFS)", scrollTo: "gallery-eifs" },
     { name: "Stone Installation", description: "Professional stone work for residential and commercial", scrollTo: "gallery-stone" },
     { name: "Insulcrete", description: "Insulated concrete installation and finishing", scrollTo: "gallery-insulcrete" },
-    { name: "Caulking", description: "Sealing for windows, doors, and joints", scrollTo: null },
-    { name: "Construction Cleaning", description: "Post-construction cleanup services", scrollTo: null }
+    { name: "Caulking", description: "Sealing for windows, doors, and joints", scrollTo: "gallery-caulking" }
   ];
 
   const scrollToSection = (id: string | null) => {
@@ -371,6 +371,26 @@ const Index = () => {
                 </div>
                 <p className="text-muted-foreground">
                   Our skilled crew applying Insulcrete to a residential foundation, ensuring proper insulation and a durable finish.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Gallery Item - Caulking */}
+            <Card id="gallery-caulking" className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up scroll-mt-24" style={{animationDelay: '0.05s'}}>
+              <div className="aspect-[4/3] overflow-hidden">
+                <img 
+                  src={caulkingWork1} 
+                  alt="Professional caulking application"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center mb-2">
+                  <Camera className="h-5 w-5 mr-2 text-accent" />
+                  <h3 className="font-semibold text-lg text-primary">Window Caulking</h3>
+                </div>
+                <p className="text-muted-foreground">
+                  Precision caulking application around window frames—sealing gaps to prevent air and water infiltration.
                 </p>
               </CardContent>
             </Card>
