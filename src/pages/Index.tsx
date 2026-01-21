@@ -54,29 +54,29 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       {/* Navigation */}
       <nav className="sticky top-0 z-50 bg-primary/95 backdrop-blur-sm border-b border-white/10">
-        <div className="container mx-auto px-4 py-6 flex items-center justify-between">
-          <div className="flex items-center gap-6">
+        <div className="container mx-auto px-4 py-3 md:py-6 flex items-center justify-between">
+          <div className="flex items-center gap-3 md:gap-6">
             <img 
               src={starLogo} 
               alt="Star Construction" 
-              className="h-24 w-auto brightness-110 contrast-110"
+              className="h-12 md:h-24 w-auto brightness-110 contrast-110"
             />
             <div className="flex flex-col">
-              <span className="text-white font-black text-5xl tracking-tight leading-none">
+              <span className="text-white font-black text-2xl md:text-5xl tracking-tight leading-none">
                 STAR
               </span>
-              <span className="text-accent font-bold text-xl tracking-widest leading-tight">
+              <span className="text-accent font-bold text-xs md:text-xl tracking-widest leading-tight">
                 CONSTRUCTION
               </span>
             </div>
           </div>
           <a 
             href={`tel:${mainPhone}`}
-            className="flex items-center gap-2 bg-accent text-accent-foreground px-5 py-3 rounded font-bold hover:bg-accent/90 transition-colors"
+            className="flex items-center gap-2 bg-accent text-accent-foreground px-3 md:px-5 py-2 md:py-3 rounded font-bold hover:bg-accent/90 transition-colors text-sm md:text-base"
           >
-            <Phone className="h-5 w-5" />
+            <Phone className="h-4 w-4 md:h-5 md:w-5" />
             <span className="hidden sm:inline">{mainPhone}</span>
-            <span className="sm:hidden">Call Now</span>
+            <span className="sm:hidden">Call</span>
           </a>
         </div>
       </nav>
