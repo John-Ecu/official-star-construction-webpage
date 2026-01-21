@@ -810,26 +810,6 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            {/* EIFS Project 2 - Image 7 */}
-            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '2.4s'}}>
-              <div className="aspect-[4/3] overflow-hidden relative">
-                <img 
-                  src={eifsProject2_7} 
-                  alt="Stone detail with EIFS"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-              </div>
-              <CardContent className="p-6">
-                <div className="flex items-center mb-2">
-                  <Camera className="h-5 w-5 mr-2 text-accent" />
-                  <h3 className="font-semibold text-lg text-primary">Stone & EIFS Detail</h3>
-                </div>
-                <p className="text-muted-foreground">
-                  Close-up showing the precision craftsmanship where natural stone meets textured EIFS finish.
-                </p>
-              </CardContent>
-            </Card>
-
             {/* EIFS Project 2 - Image 8 */}
             <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '2.5s'}}>
               <div className="aspect-[4/3] overflow-hidden">
