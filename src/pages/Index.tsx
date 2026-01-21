@@ -62,18 +62,18 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       {/* Navigation */}
       <nav className="sticky top-0 z-50 bg-primary/95 backdrop-blur-sm border-b border-white/10">
-        <div className="container mx-auto px-4 py-3 md:py-6 flex items-center justify-between">
-          <div className="flex items-center gap-3 md:gap-6">
+        <div className="container mx-auto px-4 py-2 md:py-6 flex items-center justify-between">
+          <div className="flex items-center gap-2 md:gap-6 min-w-0">
             <img 
               src={starLogo} 
               alt="Star Construction" 
-              className="h-12 md:h-24 w-auto brightness-110 contrast-110"
+              className="h-10 sm:h-14 md:h-24 w-auto brightness-110 contrast-110 flex-shrink-0"
             />
-            <div className="flex flex-col">
-              <span className="text-white font-black text-2xl md:text-5xl tracking-tight leading-none">
+            <div className="flex flex-col min-w-0">
+              <span className="text-white font-black text-lg sm:text-2xl md:text-5xl tracking-tight leading-none">
                 STAR
               </span>
-              <span className="text-accent font-bold text-xs md:text-xl tracking-widest leading-tight">
+              <span className="text-accent font-bold text-[10px] sm:text-xs md:text-xl tracking-widest leading-tight">
                 CONSTRUCTION
               </span>
             </div>
