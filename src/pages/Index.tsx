@@ -153,9 +153,10 @@ const Index = () => {
                       Wisconsin's unique climate and building requirements inside and out.
                     </p>
                     <p className="text-muted-foreground text-lg leading-relaxed">
-                      As a bilingual team, we're proud to serve both English and Spanish-speaking 
-                      communities. Our work ethic is simple: no project is too challenging, 
-                      and no detail is too small. We treat every job as if we're building for our own family.
+                      We recently completed building our first home entirely from the ground up—from laying the foundation 
+                      to the final finishing touches including custom furniture, bathroom tiles, and kitchen design. 
+                      This hands-on experience allows us to build homes efficiently and create spaces that are truly 
+                      unique to each client's needs and vision.
                     </p>
                   </div>
                   <div className="space-y-6 bg-gradient-to-br from-primary/5 to-secondary/5 p-8 rounded-xl">
@@ -171,7 +172,7 @@ const Index = () => {
                       </div>
                       <div className="flex items-center group hover:translate-x-2 transition-transform duration-300">
                         <CheckCircle className="h-6 w-6 text-accent mr-4 group-hover:text-primary transition-colors" />
-                        <span className="text-lg">🗣️ Bilingual Services (Spanish/English)</span>
+                        <span className="text-lg">🏠 Full Home Build Experience</span>
                       </div>
                       <div className="flex items-center group hover:translate-x-2 transition-transform duration-300">
                         <CheckCircle className="h-6 w-6 text-accent mr-4 group-hover:text-primary transition-colors" />
