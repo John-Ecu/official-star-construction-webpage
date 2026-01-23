@@ -55,7 +55,7 @@ const Index = () => {
 
 
   // Main contact info
-  const mainPhone = "608-635-6033";
+  const mainPhone = "608-358-3706";
   const mainEmail = "bluestarconstruction1994@gmail.com";
 
   return (
