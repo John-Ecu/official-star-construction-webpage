@@ -153,10 +153,8 @@ const Index = () => {
                       Wisconsin's unique climate and building requirements inside and out.
                     </p>
                     <p className="text-muted-foreground text-lg leading-relaxed">
-                      We recently completed building our first home entirely from the ground up—from laying the foundation 
-                      to the final finishing touches including custom furniture, bathroom tiles, and kitchen design. 
-                      This hands-on experience allows us to build homes efficiently and create spaces that are truly 
-                      unique to each client's needs and vision.
+                      Our work ethic is simple: no project is too challenging, and no detail is too small. 
+                      We treat every job as if we're building for our own family.
                     </p>
                   </div>
                   <div className="space-y-6 bg-gradient-to-br from-primary/5 to-secondary/5 p-8 rounded-xl">
