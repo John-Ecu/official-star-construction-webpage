@@ -354,175 +354,228 @@ const Index = () => {
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {/* Gallery Item 1 - Insulcrete */}
-            <Card id="gallery-insulcrete" className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up scroll-mt-24">
-              <div className="aspect-[4/3] overflow-hidden">
+            {/* ========== EIFS SECTION (1st - Most Expensive) ========== */}
+            
+            {/* EIFS Stone Process - Section Header */}
+            <div id="gallery-eifs" className="lg:col-span-3 md:col-span-2 col-span-1 animate-fade-in scroll-mt-24">
+              <div className="bg-gradient-to-r from-accent/10 to-primary/10 rounded-xl p-6 text-center">
+                <h3 className="text-2xl font-bold text-primary mb-2">🔧 EIFS Stone Installation Process</h3>
+                <p className="text-muted-foreground">See our professional EIFS stone application from metal lath to finished stone</p>
+              </div>
+            </div>
+
+            {/* EIFS - Step 1: Metal Lath */}
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.05s'}}>
+              <div className="aspect-[4/3] overflow-hidden relative">
+                <div className="absolute top-3 left-3 z-10 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-semibold">Step 1</div>
                 <img 
-                  src={insulcreteWork1} 
-                  alt="Insulcrete installation in progress"
+                  src={eifsStoneLath1} 
+                  alt="Metal lath installation for EIFS stone"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
               <CardContent className="p-6">
                 <div className="flex items-center mb-2">
                   <Camera className="h-5 w-5 mr-2 text-accent" />
-                  <h3 className="font-semibold text-lg text-primary">Insulcrete Application</h3>
+                  <h3 className="font-semibold text-lg text-primary">Metal Lath & Scratch Coat</h3>
                 </div>
                 <p className="text-muted-foreground">
-                  Our skilled crew applying Insulcrete to a residential foundation, ensuring proper insulation and a durable finish.
+                  Metal lath is secured to the exterior wall, then a scratch coat of mortar is applied to create a strong bond for the stone.
                 </p>
               </CardContent>
             </Card>
 
-            {/* Gallery Item - Caulking */}
-            <Card id="gallery-caulking" className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up scroll-mt-24" style={{animationDelay: '0.05s'}}>
-              <div className="aspect-[4/3] overflow-hidden">
-                <img 
-                  src={caulkingWork1} 
-                  alt="Professional caulking application"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-              </div>
-              <CardContent className="p-6">
-                <div className="flex items-center mb-2">
-                  <Camera className="h-5 w-5 mr-2 text-accent" />
-                  <h3 className="font-semibold text-lg text-primary">Window Caulking</h3>
-                </div>
-                <p className="text-muted-foreground">
-                  Precision caulking application around window frames—sealing gaps to prevent air and water infiltration.
-                </p>
-              </CardContent>
-            </Card>
-
-            {/* Gallery Item 2 - Chimney 1 Combined Views */}
+            {/* EIFS - Step 2: Base Coat */}
             <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.1s'}}>
-              <div className="grid grid-cols-2 gap-1">
-                <div className="aspect-[4/3] overflow-hidden">
-                  <img 
-                    src={chimneyStone1a} 
-                    alt="Stone chimney installation - side view"
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                </div>
-                <div className="aspect-[4/3] overflow-hidden">
-                  <img 
-                    src={chimneyStone1c} 
-                    alt="Stone chimney installation - front view"
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                </div>
+              <div className="aspect-[4/3] overflow-hidden relative">
+                <div className="absolute top-3 left-3 z-10 bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm font-semibold">Step 2</div>
+                <img 
+                  src={eifsStoneBase2} 
+                  alt="Base coat application for EIFS stone"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
               </div>
               <CardContent className="p-6">
                 <div className="flex items-center mb-2">
                   <Camera className="h-5 w-5 mr-2 text-accent" />
-                  <h3 className="font-semibold text-lg text-primary">Stone Chimney - Side & Front Views</h3>
+                  <h3 className="font-semibold text-lg text-primary">Brown Coat Application</h3>
                 </div>
                 <p className="text-muted-foreground">
-                  Elegant floor-to-ceiling stone chimney—a stunning focal point and mesmerizing centerpiece in this Wisconsin home.
+                  A smooth brown coat is applied over the insulation board, preparing a solid base for the final stone layer.
                 </p>
               </CardContent>
             </Card>
 
-            {/* Gallery Item 5 - Chimney 2 */}
+            {/* EIFS - Step 3: Stone Complete */}
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.15s'}}>
+              <div className="aspect-[4/3] overflow-hidden">
+                <img 
+                  src={eifsStoneComplete3} 
+                  alt="Completed EIFS stone installation"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center mb-2">
+                  <Camera className="h-5 w-5 mr-2 text-accent" />
+                  <h3 className="font-semibold text-lg text-primary">Finished Stone Exterior</h3>
+                </div>
+                <p className="text-muted-foreground">
+                  Beautiful stacked stone installed on the lower exterior, blending seamlessly with the siding above.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* EIFS & Stone Projects - Section Header */}
+            <div className="lg:col-span-3 md:col-span-2 col-span-1 animate-fade-in" style={{animationDelay: '0.2s'}}>
+              <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-xl p-6 text-center">
+                <h3 className="text-2xl font-bold text-primary mb-2">🏢 EIFS & Stone Projects Gallery</h3>
+                <p className="text-muted-foreground">Commercial and residential EIFS with stone accent installations</p>
+              </div>
+            </div>
+
+            {/* EIFS Project 2 - Image 1 */}
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.25s'}}>
+              <div className="aspect-[4/3] overflow-hidden">
+                <img 
+                  src={eifsProject2_1} 
+                  alt="EIFS application with scaffolding"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center mb-2">
+                  <Camera className="h-5 w-5 mr-2 text-accent" />
+                  <h3 className="font-semibold text-lg text-primary">Commercial EIFS Application</h3>
+                </div>
+                <p className="text-muted-foreground">
+                  Base coat being applied to commercial building with protective covering during the EIFS process.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* EIFS Project 2 - Image 2 */}
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.3s'}}>
+              <div className="aspect-[4/3] overflow-hidden">
+                <img 
+                  src={eifsProject2_2} 
+                  alt="Completed EIFS with stone wainscot"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center mb-2">
+                  <Camera className="h-5 w-5 mr-2 text-accent" />
+                  <h3 className="font-semibold text-lg text-primary">EIFS with Stone Wainscot</h3>
+                </div>
+                <p className="text-muted-foreground">
+                  Elegant covered porch featuring textured EIFS finish with natural stone base.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* EIFS Project 2 - Image 3 */}
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.35s'}}>
+              <div className="aspect-[4/3] overflow-hidden">
+                <img 
+                  src={eifsProject2_3} 
+                  alt="Luxury home with EIFS and stone"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center mb-2">
+                  <Camera className="h-5 w-5 mr-2 text-accent" />
+                  <h3 className="font-semibold text-lg text-primary">Luxury Home Exterior</h3>
+                </div>
+                <p className="text-muted-foreground">
+                  Beautiful custom home with EIFS finish, decorative medallion, and stone accents around garage doors.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* EIFS Project 2 - Image 4 */}
             <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.4s'}}>
               <div className="aspect-[4/3] overflow-hidden">
                 <img 
-                  src={chimneyStone2} 
-                  alt="Modern slate stone chimney"
+                  src={eifsProject2_4} 
+                  alt="Commercial building with stone and EIFS"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
               <CardContent className="p-6">
                 <div className="flex items-center mb-2">
                   <Camera className="h-5 w-5 mr-2 text-accent" />
-                  <h3 className="font-semibold text-lg text-primary">Modern Slate Chimney</h3>
+                  <h3 className="font-semibold text-lg text-primary">Commercial Stone Facade</h3>
                 </div>
                 <p className="text-muted-foreground">
-                  A sleek, contemporary chimney with dark slate stone installation—adding modern elegance to a new construction home.
+                  Professional commercial building featuring rustic stone wainscot with brick and EIFS upper sections.
                 </p>
               </CardContent>
             </Card>
 
-            {/* Fireplace 3 - Rustic Stone */}
+            {/* EIFS Project 2 - Image 5 */}
             <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.45s'}}>
               <div className="aspect-[4/3] overflow-hidden">
                 <img 
-                  src={fireplaceStone3} 
-                  alt="Rustic stone fireplace with wood mantel"
+                  src={eifsProject2_5} 
+                  alt="Commercial building with brick and stone"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
               <CardContent className="p-6">
                 <div className="flex items-center mb-2">
                   <Camera className="h-5 w-5 mr-2 text-accent" />
-                  <h3 className="font-semibold text-lg text-primary">Rustic Corner Fireplace</h3>
+                  <h3 className="font-semibold text-lg text-primary">Brick & Stone Combination</h3>
                 </div>
                 <p className="text-muted-foreground">
-                  Beautiful rustic stone chimney with natural wood mantel, creating warmth in this open-concept living space.
+                  Commercial building showcasing brick pillars with natural stone base and EIFS gable.
                 </p>
               </CardContent>
             </Card>
 
-            {/* Fireplace 4 - Grand Living Room */}
+            {/* EIFS Project 2 - Image 6 */}
             <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.5s'}}>
               <div className="aspect-[4/3] overflow-hidden">
                 <img 
-                  src={fireplaceStone4} 
-                  alt="Grand limestone fireplace with built-in cabinetry"
+                  src={eifsProject2_6} 
+                  alt="EIFS with stone and brick"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
               <CardContent className="p-6">
                 <div className="flex items-center mb-2">
                   <Camera className="h-5 w-5 mr-2 text-accent" />
-                  <h3 className="font-semibold text-lg text-primary">Grand Limestone Fireplace</h3>
+                  <h3 className="font-semibold text-lg text-primary">Full Exterior Finish</h3>
                 </div>
                 <p className="text-muted-foreground">
-                  Floor-to-ceiling limestone with custom hearth, flanked by elegant dark wood built-ins.
+                  Complete exterior with EIFS gable, decorative brick band, and fieldstone lower section.
                 </p>
               </CardContent>
             </Card>
 
-            {/* Fireplace 5 - Multi-Tone Ledger */}
+            {/* EIFS Project 2 - Image 8 */}
             <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.55s'}}>
               <div className="aspect-[4/3] overflow-hidden">
                 <img 
-                  src={fireplaceStone5} 
-                  alt="Multi-tone ledger stone fireplace"
+                  src={eifsProject2_8} 
+                  alt="EIFS with arched windows and stone"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
               <CardContent className="p-6">
                 <div className="flex items-center mb-2">
                   <Camera className="h-5 w-5 mr-2 text-accent" />
-                  <h3 className="font-semibold text-lg text-primary">Multi-Tone Ledger Stone</h3>
+                  <h3 className="font-semibold text-lg text-primary">Elegant Arched Windows</h3>
                 </div>
                 <p className="text-muted-foreground">
-                  Stunning stacked ledger stone with warm earth tones, featuring a dark wood floating mantel.
+                  Custom EIFS finish with decorative keystones above arched windows and natural stone base.
                 </p>
               </CardContent>
             </Card>
 
-            {/* Fireplace 6 - Corner Gray Stone */}
-            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.58s'}}>
-              <div className="aspect-[4/3] overflow-hidden">
-                <img 
-                  src={fireplaceStone6} 
-                  alt="Corner gray stone fireplace"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-              </div>
-              <CardContent className="p-6">
-                <div className="flex items-center mb-2">
-                  <Camera className="h-5 w-5 mr-2 text-accent" />
-                  <h3 className="font-semibold text-lg text-primary">Corner Gray Stone Fireplace</h3>
-                </div>
-                <p className="text-muted-foreground">
-                  Cozy corner fireplace with charcoal gray stone and natural wood mantel—a perfect accent for any living room.
-                </p>
-              </CardContent>
-            </Card>
-
+            {/* ========== STONE INSTALLATION SECTION (2nd) ========== */}
+            
             {/* Summer 2024 Exterior Stone Project - Section Header */}
             <div id="gallery-stone" className="lg:col-span-3 md:col-span-2 col-span-1 animate-fade-in scroll-mt-24" style={{animationDelay: '0.6s'}}>
               <div className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-xl p-6 text-center">
@@ -532,7 +585,7 @@ const Index = () => {
             </div>
 
             {/* Summer 2024 - Before */}
-            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.6s'}}>
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.65s'}}>
               <div className="aspect-[4/3] overflow-hidden relative">
                 <img 
                   src={summer2024Before} 
@@ -572,7 +625,7 @@ const Index = () => {
             </Card>
 
             {/* Summer 2024 - In Progress 2 */}
-            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.8s'}}>
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.75s'}}>
               <div className="aspect-[4/3] overflow-hidden">
                 <img 
                   src={summer2024Stone2} 
@@ -591,8 +644,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-
-            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '1.2s'}}>
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.8s'}}>
               <div className="aspect-[4/3] overflow-hidden">
                 <img 
                   src={summer2024Stone6} 
@@ -611,220 +663,199 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            {/* EIFS Stone Process - Section Header */}
-            <div id="gallery-eifs" className="lg:col-span-3 md:col-span-2 col-span-1 animate-fade-in scroll-mt-24" style={{animationDelay: '1.3s'}}>
-              <div className="bg-gradient-to-r from-accent/10 to-primary/10 rounded-xl p-6 text-center">
-                <h3 className="text-2xl font-bold text-primary mb-2">🔧 EIFS Stone Installation Process</h3>
-                <p className="text-muted-foreground">See our professional EIFS stone application from metal lath to finished stone</p>
+            {/* Chimney & Fireplace Stone - Section Header */}
+            <div className="lg:col-span-3 md:col-span-2 col-span-1 animate-fade-in" style={{animationDelay: '0.85s'}}>
+              <div className="bg-gradient-to-r from-secondary/10 to-primary/10 rounded-xl p-6 text-center">
+                <h3 className="text-2xl font-bold text-primary mb-2">🔥 Chimneys & Fireplaces</h3>
+                <p className="text-muted-foreground">Interior stone work for chimneys and fireplaces</p>
               </div>
             </div>
 
-            {/* EIFS - Step 1: Metal Lath */}
-            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '1.4s'}}>
-              <div className="aspect-[4/3] overflow-hidden relative">
-                <div className="absolute top-3 left-3 z-10 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-semibold">Step 1</div>
-                <img 
-                  src={eifsStoneLath1} 
-                  alt="Metal lath installation for EIFS stone"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
+            {/* Gallery Item 2 - Chimney 1 Combined Views */}
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.9s'}}>
+              <div className="grid grid-cols-2 gap-1">
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img 
+                    src={chimneyStone1a} 
+                    alt="Stone chimney installation - side view"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img 
+                    src={chimneyStone1c} 
+                    alt="Stone chimney installation - front view"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
               </div>
               <CardContent className="p-6">
                 <div className="flex items-center mb-2">
                   <Camera className="h-5 w-5 mr-2 text-accent" />
-                  <h3 className="font-semibold text-lg text-primary">Metal Lath & Scratch Coat</h3>
+                  <h3 className="font-semibold text-lg text-primary">Stone Chimney - Side & Front Views</h3>
                 </div>
                 <p className="text-muted-foreground">
-                  Metal lath is secured to the exterior wall, then a scratch coat of mortar is applied to create a strong bond for the stone.
+                  Elegant floor-to-ceiling stone chimney—a stunning focal point and mesmerizing centerpiece in this Wisconsin home.
                 </p>
               </CardContent>
             </Card>
 
-            {/* EIFS - Step 2: Base Coat */}
-            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '1.5s'}}>
-              <div className="aspect-[4/3] overflow-hidden relative">
-                <div className="absolute top-3 left-3 z-10 bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm font-semibold">Step 2</div>
-                <img 
-                  src={eifsStoneBase2} 
-                  alt="Base coat application for EIFS stone"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-              </div>
-              <CardContent className="p-6">
-                <div className="flex items-center mb-2">
-                  <Camera className="h-5 w-5 mr-2 text-accent" />
-                  <h3 className="font-semibold text-lg text-primary">Brown Coat Application</h3>
-                </div>
-                <p className="text-muted-foreground">
-                  A smooth brown coat is applied over the insulation board, preparing a solid base for the final stone layer.
-                </p>
-              </CardContent>
-            </Card>
-
-            {/* EIFS - Step 3: Stone Complete */}
-            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '1.6s'}}>
+            {/* Gallery Item 5 - Chimney 2 */}
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.95s'}}>
               <div className="aspect-[4/3] overflow-hidden">
                 <img 
-                  src={eifsStoneComplete3} 
-                  alt="Completed EIFS stone installation"
+                  src={chimneyStone2} 
+                  alt="Modern slate stone chimney"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
               <CardContent className="p-6">
                 <div className="flex items-center mb-2">
                   <Camera className="h-5 w-5 mr-2 text-accent" />
-                  <h3 className="font-semibold text-lg text-primary">Finished Stone Exterior</h3>
+                  <h3 className="font-semibold text-lg text-primary">Modern Slate Chimney</h3>
                 </div>
                 <p className="text-muted-foreground">
-                  Beautiful stacked stone installed on the lower exterior, blending seamlessly with the siding above.
+                  A sleek, contemporary chimney with dark slate stone installation—adding modern elegance to a new construction home.
                 </p>
               </CardContent>
             </Card>
 
-            {/* EIFS & Stone Projects - Section Header */}
-            <div className="lg:col-span-3 md:col-span-2 col-span-1 animate-fade-in" style={{animationDelay: '1.7s'}}>
-              <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-xl p-6 text-center">
-                <h3 className="text-2xl font-bold text-primary mb-2">🏢 EIFS & Stone Projects Gallery</h3>
-                <p className="text-muted-foreground">Commercial and residential EIFS with stone accent installations</p>
+            {/* Fireplace 3 - Rustic Stone */}
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '1s'}}>
+              <div className="aspect-[4/3] overflow-hidden">
+                <img 
+                  src={fireplaceStone3} 
+                  alt="Rustic stone fireplace with wood mantel"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center mb-2">
+                  <Camera className="h-5 w-5 mr-2 text-accent" />
+                  <h3 className="font-semibold text-lg text-primary">Rustic Corner Fireplace</h3>
+                </div>
+                <p className="text-muted-foreground">
+                  Beautiful rustic stone chimney with natural wood mantel, creating warmth in this open-concept living space.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Fireplace 4 - Grand Living Room */}
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '1.05s'}}>
+              <div className="aspect-[4/3] overflow-hidden">
+                <img 
+                  src={fireplaceStone4} 
+                  alt="Grand limestone fireplace with built-in cabinetry"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center mb-2">
+                  <Camera className="h-5 w-5 mr-2 text-accent" />
+                  <h3 className="font-semibold text-lg text-primary">Grand Limestone Fireplace</h3>
+                </div>
+                <p className="text-muted-foreground">
+                  Floor-to-ceiling limestone with custom hearth, flanked by elegant dark wood built-ins.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Fireplace 5 - Multi-Tone Ledger */}
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '1.1s'}}>
+              <div className="aspect-[4/3] overflow-hidden">
+                <img 
+                  src={fireplaceStone5} 
+                  alt="Multi-tone ledger stone fireplace"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center mb-2">
+                  <Camera className="h-5 w-5 mr-2 text-accent" />
+                  <h3 className="font-semibold text-lg text-primary">Multi-Tone Ledger Stone</h3>
+                </div>
+                <p className="text-muted-foreground">
+                  Stunning stacked ledger stone with warm earth tones, featuring a dark wood floating mantel.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Fireplace 6 - Corner Gray Stone */}
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '1.15s'}}>
+              <div className="aspect-[4/3] overflow-hidden">
+                <img 
+                  src={fireplaceStone6} 
+                  alt="Corner gray stone fireplace"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center mb-2">
+                  <Camera className="h-5 w-5 mr-2 text-accent" />
+                  <h3 className="font-semibold text-lg text-primary">Corner Gray Stone Fireplace</h3>
+                </div>
+                <p className="text-muted-foreground">
+                  Cozy corner fireplace with charcoal gray stone and natural wood mantel—a perfect accent for any living room.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* ========== CAULKING SECTION (3rd) ========== */}
+            
+            {/* Caulking - Section Header */}
+            <div id="gallery-caulking" className="lg:col-span-3 md:col-span-2 col-span-1 animate-fade-in scroll-mt-24" style={{animationDelay: '1.2s'}}>
+              <div className="bg-gradient-to-r from-accent/10 to-secondary/10 rounded-xl p-6 text-center">
+                <h3 className="text-2xl font-bold text-primary mb-2">🔧 Professional Caulking</h3>
+                <p className="text-muted-foreground">Precision sealing for windows, doors, and joints</p>
               </div>
             </div>
 
-            {/* EIFS Project 2 - Image 1 */}
-            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '1.8s'}}>
+            {/* Gallery Item - Caulking */}
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '1.25s'}}>
               <div className="aspect-[4/3] overflow-hidden">
                 <img 
-                  src={eifsProject2_1} 
-                  alt="EIFS application with scaffolding"
+                  src={caulkingWork1} 
+                  alt="Professional caulking application"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
               <CardContent className="p-6">
                 <div className="flex items-center mb-2">
                   <Camera className="h-5 w-5 mr-2 text-accent" />
-                  <h3 className="font-semibold text-lg text-primary">Commercial EIFS Application</h3>
+                  <h3 className="font-semibold text-lg text-primary">Window Caulking</h3>
                 </div>
                 <p className="text-muted-foreground">
-                  Base coat being applied to commercial building with protective covering during the EIFS process.
+                  Precision caulking application around window frames—sealing gaps to prevent air and water infiltration.
                 </p>
               </CardContent>
             </Card>
 
-            {/* EIFS Project 2 - Image 2 */}
-            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '1.9s'}}>
-              <div className="aspect-[4/3] overflow-hidden">
-                <img 
-                  src={eifsProject2_2} 
-                  alt="Completed EIFS with stone wainscot"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
+            {/* ========== INSULCRETE SECTION (4th - Least Expensive) ========== */}
+            
+            {/* Insulcrete - Section Header */}
+            <div id="gallery-insulcrete" className="lg:col-span-3 md:col-span-2 col-span-1 animate-fade-in scroll-mt-24" style={{animationDelay: '1.3s'}}>
+              <div className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-xl p-6 text-center">
+                <h3 className="text-2xl font-bold text-primary mb-2">🏗️ Insulcrete Applications</h3>
+                <p className="text-muted-foreground">Insulated concrete installation and finishing</p>
               </div>
-              <CardContent className="p-6">
-                <div className="flex items-center mb-2">
-                  <Camera className="h-5 w-5 mr-2 text-accent" />
-                  <h3 className="font-semibold text-lg text-primary">EIFS with Stone Wainscot</h3>
-                </div>
-                <p className="text-muted-foreground">
-                  Elegant covered porch featuring textured EIFS finish with natural stone base.
-                </p>
-              </CardContent>
-            </Card>
+            </div>
 
-            {/* EIFS Project 2 - Image 3 */}
-            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '2s'}}>
+            {/* Gallery Item 1 - Insulcrete */}
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '1.35s'}}>
               <div className="aspect-[4/3] overflow-hidden">
                 <img 
-                  src={eifsProject2_3} 
-                  alt="Luxury home with EIFS and stone"
+                  src={insulcreteWork1} 
+                  alt="Insulcrete installation in progress"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
               <CardContent className="p-6">
                 <div className="flex items-center mb-2">
                   <Camera className="h-5 w-5 mr-2 text-accent" />
-                  <h3 className="font-semibold text-lg text-primary">Luxury Home Exterior</h3>
+                  <h3 className="font-semibold text-lg text-primary">Insulcrete Application</h3>
                 </div>
                 <p className="text-muted-foreground">
-                  Beautiful custom home with EIFS finish, decorative medallion, and stone accents around garage doors.
-                </p>
-              </CardContent>
-            </Card>
-
-            {/* EIFS Project 2 - Image 4 */}
-            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '2.1s'}}>
-              <div className="aspect-[4/3] overflow-hidden">
-                <img 
-                  src={eifsProject2_4} 
-                  alt="Commercial building with stone and EIFS"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-              </div>
-              <CardContent className="p-6">
-                <div className="flex items-center mb-2">
-                  <Camera className="h-5 w-5 mr-2 text-accent" />
-                  <h3 className="font-semibold text-lg text-primary">Commercial Stone Facade</h3>
-                </div>
-                <p className="text-muted-foreground">
-                  Professional commercial building featuring rustic stone wainscot with brick and EIFS upper sections.
-                </p>
-              </CardContent>
-            </Card>
-
-            {/* EIFS Project 2 - Image 5 */}
-            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '2.2s'}}>
-              <div className="aspect-[4/3] overflow-hidden">
-                <img 
-                  src={eifsProject2_5} 
-                  alt="Commercial building with brick and stone"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-              </div>
-              <CardContent className="p-6">
-                <div className="flex items-center mb-2">
-                  <Camera className="h-5 w-5 mr-2 text-accent" />
-                  <h3 className="font-semibold text-lg text-primary">Brick & Stone Combination</h3>
-                </div>
-                <p className="text-muted-foreground">
-                  Commercial building showcasing brick pillars with natural stone base and EIFS gable.
-                </p>
-              </CardContent>
-            </Card>
-
-            {/* EIFS Project 2 - Image 6 */}
-            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '2.3s'}}>
-              <div className="aspect-[4/3] overflow-hidden">
-                <img 
-                  src={eifsProject2_6} 
-                  alt="EIFS with stone and brick"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-              </div>
-              <CardContent className="p-6">
-                <div className="flex items-center mb-2">
-                  <Camera className="h-5 w-5 mr-2 text-accent" />
-                  <h3 className="font-semibold text-lg text-primary">Full Exterior Finish</h3>
-                </div>
-                <p className="text-muted-foreground">
-                  Complete exterior with EIFS gable, decorative brick band, and fieldstone lower section.
-                </p>
-              </CardContent>
-            </Card>
-
-            {/* EIFS Project 2 - Image 8 */}
-            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '2.5s'}}>
-              <div className="aspect-[4/3] overflow-hidden">
-                <img 
-                  src={eifsProject2_8} 
-                  alt="EIFS with arched windows and stone"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-              </div>
-              <CardContent className="p-6">
-                <div className="flex items-center mb-2">
-                  <Camera className="h-5 w-5 mr-2 text-accent" />
-                  <h3 className="font-semibold text-lg text-primary">Elegant Arched Windows</h3>
-                </div>
-                <p className="text-muted-foreground">
-                  Custom EIFS finish with decorative keystones above arched windows and natural stone base.
+                  Our skilled crew applying Insulcrete to a residential foundation, ensuring proper insulation and a durable finish.
                 </p>
               </CardContent>
             </Card>
