@@ -41,8 +41,8 @@ const Index = () => {
   const services = [
     { name: "EIFS", description: "Exterior Insulation and Finish System (EIFS)", scrollTo: "gallery-eifs" },
     { name: "Stone Installation", description: "Professional stone work for residential and commercial", scrollTo: "gallery-stone" },
-    { name: "Insulcrete", description: "Insulated concrete installation and finishing", scrollTo: "gallery-insulcrete" },
-    { name: "Caulking", description: "Sealing for windows, doors, and joints", scrollTo: "gallery-caulking" }
+    { name: "Caulking", description: "Sealing for windows, doors, and joints", scrollTo: "gallery-caulking" },
+    { name: "Insulcrete", description: "Insulated concrete installation and finishing", scrollTo: "gallery-insulcrete" }
   ];
 
   const scrollToSection = (id: string | null) => {
