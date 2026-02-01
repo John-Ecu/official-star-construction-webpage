@@ -101,7 +101,7 @@ const Index = () => {
             <span className="text-accent">EXPECT MORE</span>
           </h1>
           <p className="text-lg md:text-xl mb-10 max-w-2xl mx-auto opacity-80 animate-slide-up font-light">
-            Trusted by builders, loved by homeowners throughout Dane County, Wisconsin
+            Trusted by Builders. Loved by Homeowners.
           </p>
           <div className="flex flex-wrap justify-center gap-3 mb-10 animate-fade-in" style={{animationDelay: '0.3s'}}>
             {services.map((service) => (
