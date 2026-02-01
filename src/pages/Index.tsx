@@ -39,7 +39,7 @@ import commercial9 from "@/assets/gallery/commercial-9.jpeg";
 
 const Index = () => {
   const services = [
-    { name: "EIFS", description: "Exterior Insulation and Finish System (EIFS)", scrollTo: "gallery-eifs" },
+    { name: "EIFS & Stucco", description: "Exterior Insulation and Finish System (EIFS) & Stucco", scrollTo: "gallery-eifs" },
     { name: "Stone Installation", description: "Professional stone work for residential and commercial", scrollTo: "gallery-stone" },
     { name: "Caulking", description: "Sealing for windows, doors, and joints", scrollTo: "gallery-caulking" },
     { name: "Insulcrete", description: "Insulated concrete installation and finishing", scrollTo: "gallery-insulcrete" }
@@ -413,8 +413,8 @@ const Index = () => {
             {/* ========== EIFS SECTION ========== */}
             <div id="gallery-eifs" className="lg:col-span-3 md:col-span-2 col-span-1 animate-fade-in scroll-mt-24" style={{animationDelay: '0.15s'}}>
               <div className="bg-gradient-to-r from-accent/10 to-primary/10 rounded-xl p-6 text-center">
-                <h3 className="text-2xl font-bold text-primary mb-2">🔧 EIFS Installation</h3>
-                <p className="text-muted-foreground">Professional EIFS stone application for residential and commercial projects</p>
+                <h3 className="text-2xl font-bold text-primary mb-2">🔧 EIFS & Stucco Installation</h3>
+                <p className="text-muted-foreground">Professional EIFS and stucco application for residential and commercial projects</p>
               </div>
             </div>
 
@@ -447,7 +447,7 @@ const Index = () => {
               </div>
               <CardContent className="p-4">
                 <h3 className="font-semibold text-primary mb-1">Luxury Home Exterior</h3>
-                <p className="text-muted-foreground text-sm">Custom home with EIFS finish, decorative medallion, and stone accents.</p>
+                <p className="text-muted-foreground text-sm">Custom home featuring stucco finish, decorative medallion, and stone accents.</p>
               </CardContent>
             </Card>
 
