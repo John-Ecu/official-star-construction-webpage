@@ -617,7 +617,7 @@ const Index = () => {
             {/* Dane County Map */}
             <div className="max-w-4xl mx-auto rounded-xl overflow-hidden shadow-lg border border-white/10">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190000!2d-89.5!3d43.07!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8806536d3a2019ff%3A0x4e0cfcb5ba484198!2sDane%20County%2C%20WI!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95000!2d-89.42!3d43.07!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8806536d3a2019ff%3A0x4e0cfcb5ba484198!2sDane%20County%2C%20WI!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
                 width="100%"
                 height="450"
                 style={{ border: 0 }}
