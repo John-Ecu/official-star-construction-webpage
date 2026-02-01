@@ -1,42 +1,26 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
-import { Phone, Mail, MapPin, Shield, Users, CheckCircle, Camera, Layers } from "lucide-react";
+import { Phone, Mail, MapPin, Shield, Users, CheckCircle, Layers } from "lucide-react";
 import starLogo from "@/assets/star-construction-logo.png";
 import insulcreteWork1 from "@/assets/gallery/insulcrete-work-1.jpeg";
 import caulkingWork1 from "@/assets/gallery/caulking-work-1.jpeg";
 import chimneyStone1a from "@/assets/gallery/chimney-stone-1a.jpeg";
-import chimneyStone1c from "@/assets/gallery/chimney-stone-1c.jpeg";
 import chimneyStone2 from "@/assets/gallery/chimney-stone-2.jpeg";
 import summer2024Before from "@/assets/gallery/summer2024-stone-before.jpeg";
-import summer2024Stone1 from "@/assets/gallery/summer2024-stone-1.jpeg";
-import summer2024Stone2 from "@/assets/gallery/summer2024-stone-2.jpeg";
 import summer2024Stone6 from "@/assets/gallery/summer2024-stone-6.jpeg";
-import fireplaceStone3 from "@/assets/gallery/fireplace-stone-3.jpeg";
 import fireplaceStone4 from "@/assets/gallery/fireplace-stone-4.jpeg";
 import fireplaceStone5 from "@/assets/gallery/fireplace-stone-5.jpeg";
-import fireplaceStone6 from "@/assets/gallery/fireplace-stone-6.jpeg";
 import eifsStoneLath1 from "@/assets/gallery/eifs-stone-lath-1.jpeg";
 import eifsStoneBase2 from "@/assets/gallery/eifs-stone-base-2.jpeg";
 import eifsStoneComplete3 from "@/assets/gallery/eifs-stone-complete-3.jpeg";
-import eifsProject2_1 from "@/assets/gallery/eifs-project2-1.jpeg";
-import eifsProject2_2 from "@/assets/gallery/eifs-project2-2.jpeg";
 import eifsProject2_3 from "@/assets/gallery/eifs-project2-3.jpeg";
-import eifsProject2_4 from "@/assets/gallery/eifs-project2-4.jpeg";
-import eifsProject2_5 from "@/assets/gallery/eifs-project2-5.jpeg";
-import eifsProject2_6 from "@/assets/gallery/eifs-project2-6.jpeg";
-import eifsProject2_7 from "@/assets/gallery/eifs-project2-7.jpeg";
 import eifsProject2_8 from "@/assets/gallery/eifs-project2-8.jpeg";
 import commercial1 from "@/assets/gallery/commercial-1.jpeg";
 import commercial2 from "@/assets/gallery/commercial-2.jpeg";
 import commercial3 from "@/assets/gallery/commercial-3.jpeg";
-import commercial4 from "@/assets/gallery/commercial-4.jpeg";
 import commercial5 from "@/assets/gallery/commercial-5.jpeg";
-import commercial6 from "@/assets/gallery/commercial-6.jpeg";
-import commercial7 from "@/assets/gallery/commercial-7.jpeg";
 import commercial8 from "@/assets/gallery/commercial-8.jpeg";
 import commercial9 from "@/assets/gallery/commercial-9.jpeg";
-import daneCountyMap from "@/assets/dane-county-map.png";
 
 const Index = () => {
   const services = [
@@ -649,7 +633,7 @@ const Index = () => {
             />
           </div>
           <p className="text-primary-foreground/80 text-lg mb-2">Proudly Serving Dane County, Wisconsin</p>
-          <p className="text-sm text-primary-foreground/60">Professional Construction Services Since 2000s</p>
+          <p className="text-sm text-primary-foreground/60">Professional Construction Services</p>
         </div>
       </footer>
     </div>
