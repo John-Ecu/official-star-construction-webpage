@@ -354,8 +354,64 @@ const Index = () => {
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {/* ========== COMMERCIAL SECTION (FIRST) ========== */}
+            <div className="lg:col-span-3 md:col-span-2 col-span-1 animate-fade-in scroll-mt-24">
+              <div className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-xl p-6 text-center">
+                <h3 className="text-2xl font-bold text-primary mb-2">🏢 Commercial & Large-Scale Projects</h3>
+                <p className="text-muted-foreground">Partnered with major construction companies on hotels, multi-story buildings, and more</p>
+              </div>
+            </div>
+
+            {/* Commercial EIFS combo */}
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up">
+              <div className="grid grid-cols-2 gap-1">
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img src={commercial1} alt="Luxury home EIFS prep" className="w-full h-full object-cover" />
+                </div>
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img src={commercial2} alt="Full scaffolding setup" className="w-full h-full object-cover" />
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-semibold text-primary mb-1">Large-Scale EIFS Prep</h3>
+                <p className="text-muted-foreground text-sm">Professional scaffolding for safe, efficient exterior access.</p>
+              </CardContent>
+            </Card>
+
+            {/* Hotel Projects */}
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.05s'}}>
+              <div className="grid grid-cols-2 gap-1">
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img src={commercial3} alt="Hotel EIFS exterior" className="w-full h-full object-cover" />
+                </div>
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img src={commercial9} alt="Hotel ground floor" className="w-full h-full object-cover" />
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-semibold text-primary mb-1">Hotel EIFS Projects</h3>
+                <p className="text-muted-foreground text-sm">Multi-story hotels with clean EIFS finishes and bold accents.</p>
+              </CardContent>
+            </Card>
+
+            {/* High-Rise Work */}
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.1s'}}>
+              <div className="grid grid-cols-2 gap-1">
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img src={commercial5} alt="Multi-story EIFS" className="w-full h-full object-cover" />
+                </div>
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img src={commercial8} alt="Skilled high-rise work" className="w-full h-full object-cover" />
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-semibold text-primary mb-1">Multi-Story Commercial</h3>
+                <p className="text-muted-foreground text-sm">Experienced crew working safely at height on large projects.</p>
+              </CardContent>
+            </Card>
+
             {/* ========== EIFS SECTION ========== */}
-            <div id="gallery-eifs" className="lg:col-span-3 md:col-span-2 col-span-1 animate-fade-in scroll-mt-24">
+            <div id="gallery-eifs" className="lg:col-span-3 md:col-span-2 col-span-1 animate-fade-in scroll-mt-24" style={{animationDelay: '0.15s'}}>
               <div className="bg-gradient-to-r from-accent/10 to-primary/10 rounded-xl p-6 text-center">
                 <h3 className="text-2xl font-bold text-primary mb-2">🔧 EIFS Installation</h3>
                 <p className="text-muted-foreground">Professional EIFS stone application for residential and commercial projects</p>
@@ -363,7 +419,7 @@ const Index = () => {
             </div>
 
             {/* EIFS Process - 3 steps in one card */}
-            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.05s'}}>
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.2s'}}>
               <div className="grid grid-cols-3 gap-1">
                 <div className="aspect-square overflow-hidden relative">
                   <div className="absolute top-1 left-1 z-10 bg-primary text-primary-foreground px-2 py-0.5 rounded-full text-xs font-semibold">1</div>
@@ -385,7 +441,7 @@ const Index = () => {
             </Card>
 
             {/* EIFS Project highlights - reduced to 3 best images */}
-            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.1s'}}>
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.25s'}}>
               <div className="aspect-[4/3] overflow-hidden">
                 <img src={eifsProject2_3} alt="Luxury home with EIFS and stone" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
               </div>
@@ -395,7 +451,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.15s'}}>
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.3s'}}>
               <div className="aspect-[4/3] overflow-hidden">
                 <img src={eifsProject2_8} alt="EIFS with arched windows" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
               </div>
@@ -413,21 +469,21 @@ const Index = () => {
               </div>
             </div>
 
-            {/* Summer 2024 Before/After combo */}
-            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.25s'}}>
+            {/* EIFS to Cultured Stone Process */}
+            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.4s'}}>
               <div className="grid grid-cols-2 gap-1">
                 <div className="aspect-[4/3] overflow-hidden relative">
-                  <div className="absolute top-1 left-1 z-10 bg-muted text-muted-foreground px-2 py-0.5 rounded text-xs font-semibold">Before</div>
-                  <img src={summer2024Before} alt="Before stone installation" className="w-full h-full object-cover" />
+                  <div className="absolute top-1 left-1 z-10 bg-primary text-primary-foreground px-2 py-0.5 rounded text-xs font-semibold">EIFS Install</div>
+                  <img src={summer2024Before} alt="EIFS installation in progress" className="w-full h-full object-cover" />
                 </div>
                 <div className="aspect-[4/3] overflow-hidden relative">
-                  <div className="absolute top-1 left-1 z-10 bg-accent text-accent-foreground px-2 py-0.5 rounded text-xs font-semibold">After</div>
-                  <img src={summer2024Stone6} alt="Completed stone exterior" className="w-full h-full object-cover" />
+                  <div className="absolute top-1 left-1 z-10 bg-accent text-accent-foreground px-2 py-0.5 rounded text-xs font-semibold">Complete</div>
+                  <img src={summer2024Stone6} alt="Completed cultured stone wall" className="w-full h-full object-cover" />
                 </div>
               </div>
               <CardContent className="p-4">
-                <h3 className="font-semibold text-primary mb-1">Exterior Stone Transformation</h3>
-                <p className="text-muted-foreground text-sm">Complete residential stone installation in Dane County.</p>
+                <h3 className="font-semibold text-primary mb-1">Exterior Stone Wall</h3>
+                <p className="text-muted-foreground text-sm">EIFS substrate with completed cultured stone exterior finish.</p>
               </CardContent>
             </Card>
 
@@ -494,69 +550,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Commercial Projects Section */}
-      <section className="py-20 bg-gradient-to-br from-muted/30 to-secondary/10">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              🏢 Commercial & Large-Scale Projects
-            </h2>
-            <p className="text-muted-foreground max-w-4xl mx-auto text-lg leading-relaxed">
-              We've partnered with major construction companies on large-scale commercial projects, 
-              performing EIFS installation and everyday construction labor on hotels, multi-story buildings, and more.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {/* Commercial EIFS combo */}
-            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up">
-              <div className="grid grid-cols-2 gap-1">
-                <div className="aspect-[4/3] overflow-hidden">
-                  <img src={commercial1} alt="Luxury home EIFS prep" className="w-full h-full object-cover" />
-                </div>
-                <div className="aspect-[4/3] overflow-hidden">
-                  <img src={commercial2} alt="Full scaffolding setup" className="w-full h-full object-cover" />
-                </div>
-              </div>
-              <CardContent className="p-4">
-                <h3 className="font-semibold text-primary mb-1">Large-Scale EIFS Prep</h3>
-                <p className="text-muted-foreground text-sm">Professional scaffolding for safe, efficient exterior access.</p>
-              </CardContent>
-            </Card>
-
-            {/* Hotel Projects */}
-            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.1s'}}>
-              <div className="grid grid-cols-2 gap-1">
-                <div className="aspect-[4/3] overflow-hidden">
-                  <img src={commercial3} alt="Hotel EIFS exterior" className="w-full h-full object-cover" />
-                </div>
-                <div className="aspect-[4/3] overflow-hidden">
-                  <img src={commercial9} alt="Hotel ground floor" className="w-full h-full object-cover" />
-                </div>
-              </div>
-              <CardContent className="p-4">
-                <h3 className="font-semibold text-primary mb-1">Hotel EIFS Projects</h3>
-                <p className="text-muted-foreground text-sm">Multi-story hotels with clean EIFS finishes and bold accents.</p>
-              </CardContent>
-            </Card>
-
-            {/* High-Rise Work */}
-            <Card className="bg-gradient-card shadow-soft border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:scale-105 animate-slide-up" style={{animationDelay: '0.2s'}}>
-              <div className="grid grid-cols-2 gap-1">
-                <div className="aspect-[4/3] overflow-hidden">
-                  <img src={commercial5} alt="Multi-story EIFS" className="w-full h-full object-cover" />
-                </div>
-                <div className="aspect-[4/3] overflow-hidden">
-                  <img src={commercial8} alt="Skilled high-rise work" className="w-full h-full object-cover" />
-                </div>
-              </div>
-              <CardContent className="p-4">
-                <h3 className="font-semibold text-primary mb-1">Multi-Story Commercial</h3>
-                <p className="text-muted-foreground text-sm">Experienced crew working safely at height on large projects.</p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
 
       {/* Trusted Partners Section */}
       <section className="py-20 bg-gradient-to-b from-background to-secondary/5">
