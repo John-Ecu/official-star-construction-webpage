@@ -40,6 +40,7 @@ import daneCountyMap from "@/assets/dane-county-map.png";
 
 const Index = () => {
   const services = [
+    { name: "Commercial", description: "Large-scale commercial projects", scrollTo: "gallery-commercial" },
     { name: "EIFS & Stucco", description: "Exterior Insulation and Finish System (EIFS) & Stucco", scrollTo: "gallery-eifs" },
     { name: "Stone Installation", description: "Professional stone work for residential and commercial", scrollTo: "gallery-stone" },
     { name: "Caulking", description: "Sealing for windows, doors, and joints", scrollTo: "gallery-caulking" },
@@ -356,7 +357,7 @@ const Index = () => {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* ========== COMMERCIAL SECTION (FIRST) ========== */}
-            <div className="lg:col-span-3 md:col-span-2 col-span-1 animate-fade-in scroll-mt-24">
+            <div id="gallery-commercial" className="lg:col-span-3 md:col-span-2 col-span-1 animate-fade-in scroll-mt-24">
               <div className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-xl p-6 text-center">
                 <h3 className="text-2xl font-bold text-primary mb-2">🏢 Commercial & Large-Scale Projects</h3>
                 <p className="text-muted-foreground">Partnered with major construction companies on hotels, multi-story buildings, and more</p>
