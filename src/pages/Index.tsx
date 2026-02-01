@@ -122,13 +122,13 @@ const Index = () => {
             ))}
           </div>
           <div className="animate-slide-up" style={{animationDelay: '0.6s'}}>
-            <Button 
-              size="lg" 
-              className="text-lg px-10 py-6 bg-accent text-accent-foreground hover:bg-accent/90 transition-all duration-300 hover:scale-105 font-bold rounded"
-              onClick={() => scrollToSection('quote-form')}
+            <a 
+              href={`mailto:${mainEmail}?subject=Free Quote Request`}
+              className="inline-flex items-center gap-2 text-lg px-10 py-6 bg-accent text-accent-foreground hover:bg-accent/90 transition-all duration-300 hover:scale-105 font-bold rounded"
             >
+              <Mail className="h-5 w-5" />
               Get a Free Quote
-            </Button>
+            </a>
           </div>
         </div>
       </section>
@@ -587,65 +587,16 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="quote-form" className="py-24 bg-gradient-hero text-primary-foreground relative overflow-hidden scroll-mt-24">
+      <section className="py-24 bg-gradient-hero text-primary-foreground relative overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <div className="w-full h-full bg-gradient-to-br from-white/5 to-transparent"></div>
         </div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center animate-fade-in">
             <h2 className="text-5xl font-bold mb-6">Get a Free Quote</h2>
-            <p className="text-xl opacity-90 mb-8">
-              Fill out the form below and we'll get back to you within 24 hours.
+            <p className="text-xl opacity-90 mb-12">
+              Ready to start your project? Contact us today for a free estimate on your next construction project.
             </p>
-            
-            {/* Quote Form */}
-            <form className="max-w-md mx-auto mb-12 space-y-4 text-left">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium mb-1 opacity-90">Name</label>
-                <input 
-                  type="text" 
-                  id="name" 
-                  name="name"
-                  placeholder="Your name"
-                  className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/30 text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-accent"
-                  required
-                  maxLength={100}
-                />
-              </div>
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium mb-1 opacity-90">Email</label>
-                <input 
-                  type="email" 
-                  id="email" 
-                  name="email"
-                  placeholder="your@email.com"
-                  className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/30 text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-accent"
-                  required
-                  maxLength={255}
-                />
-              </div>
-              <div>
-                <label htmlFor="phone" className="block text-sm font-medium mb-1 opacity-90">Phone</label>
-                <input 
-                  type="tel" 
-                  id="phone" 
-                  name="phone"
-                  placeholder="(555) 555-5555"
-                  className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/30 text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-accent"
-                  required
-                  maxLength={20}
-                />
-              </div>
-              <Button 
-                type="submit" 
-                size="lg" 
-                className="w-full bg-accent text-accent-foreground hover:bg-accent/90 font-bold py-4 text-lg"
-              >
-                Submit Request
-              </Button>
-            </form>
-
-            <p className="text-sm opacity-70 mb-8">Or contact us directly:</p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-12">
               <a 
