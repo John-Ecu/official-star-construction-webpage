@@ -26,8 +26,7 @@ const Index = () => {
   const services = [
     { name: "Commercial", description: "Large-scale commercial projects", scrollTo: "gallery-commercial" },
     { name: "EIFS & Stucco", description: "Exterior Insulation and Finish System (EIFS) & Stucco", scrollTo: "gallery-eifs" },
-    { name: "Stone Installation", description: "Professional stone work for residential and commercial", scrollTo: "gallery-stone" },
-    { name: "Fireplace & Chimney Stone", description: "Custom fireplace and chimney stone installation", scrollTo: "gallery-stone" },
+    { name: "Fireplace & Chimney Stone Installation", description: "Custom fireplace and chimney stone installation", scrollTo: "gallery-stone" },
     { name: "Caulking", description: "Sealing for windows, doors, and joints", scrollTo: "gallery-caulking" },
     { name: "Insulcrete", description: "Insulated concrete installation and finishing", scrollTo: "gallery-insulcrete" }
   ];
